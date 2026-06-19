@@ -1,0 +1,131 @@
+Revision history for Perl extension IO::Compress::Brotli.
+
+0.022 2026-05-29T02:40-04:00
+ - Fix static build issue
+
+0.021 2026-05-29T02:46-04:00
+ - Revert Update SvPV to SvPVbyte for buffers from 0.019
+ - Fix potential memory leaks in error path
+
+0.020 2025-11-18T02:55-04:00
+ - Update included Brotli library to v1.2.0
+
+0.019 2024-11-30T14:30+04:00
+ - Update ppport.h to 3.71
+ - Update actions and add ubuntu matrix
+ - Update SvPV to SvPVbyte for buffers
+ - Fixes #6 - IO::Compress::Brotli makefile error with static build
+ - Explicitly convert unsigned char * to char *
+
+0.018 2023-10-31T20:50+03:00
+ - Test release to support 5.8+ perl
+ - Really just removes the tests destructive regex as per RT:145844
+
+0.017 2023-10-31T16:50+03:00
+ - Release 0.016-TRIAL as producion
+ - This release finally seems to have fixed the Windows build issues
+
+0.016 2023-10-30T22:00+03:00
+ - Support Visual Studio and nmake
+ - library file names are different
+
+0.015 2023-10-30T17:20+03:00
+ - Maybe I should give up on Windows...
+ - uname is sometimes blank so also check for osname
+
+0.014 2023-10-29T19:26+03:00
+ - Test release to fix silly bug in 0.013 fic for Strawberry
+
+0.013 2023-10-29T13:05+03:00
+ - Test release to see if nmake issue on Strawberry can be resolved
+
+0.012 2023-10-29T09:25+03:00
+ - Release 0.011-TRIAL as production
+ - It included more Strawberry Perl/build changes that allow it to build with gcc/MinG
+ - Happy to fix remaining issues with Visual Studio versions but need assistance
+
+0.011 2023-10-28T20:55+03:00
+ - More Strawberry Perl/build changes
+
+0.010 2023-10-28T10:50+03:00
+ - More Strawberry Perl changes
+ - Fix bro-perl issue from move to File::Slurper
+
+0.009 2023-10-27T22:35+03:00
+ - Fix bro-perl issue from move to File::Slurper
+ - Fix issue compiling with Strawberry Perl
+
+0.008 2023-10-27T17:55+03:00
+ - Versions 0.005 to 0.007 incorrectly build brotli as a shared lib
+ - Build Brotli as a static library
+
+0.007 2023-10-26T20:35+03:00
+ - Release 0.006-TRIAL as production release
+ - New Maintainer TIMLEGGE
+ - Update included Brotli library to v1.1.0
+ - Installation now requires cmake version 3.  Alien::cmake3 used if there is no system cmake
+ - Unreleased 0.004_002 changes
+
+0.006 2023-10-24T22:03+03:00
+ - New Maintainer TIMLEGGE
+ - Update included Brotli library to v1.1.0
+ - Installation now requires cmake version 3.  Alien::cmake3 used if there is no system cmake
+ - Unreleased 0.004_002 changes
+
+0.005 2023-10-21T21:15+03:00
+ - New Maintainer TIMLEGGE
+ - Update included Brotli library to v1.1.0
+
+0.004_002 2019-06-11T16:06+03:00
+ - Make unbro not require maximum buffer size (RT #129480)
+ - Add "binmode FH" to 01-uncompress.t (RT #125995)
+ - Fix link in POD
+ - Update POD for bro to include configurables (thanks, Mark Zabaro)
+ - Update included Brotli library to v1.0.7
+
+0.004001 2018-05-19T19:58+01:00
+ - Update included Brotli library to v1.0.4
+ - Use File::Slurper instead of File::Slurp
+
+0.004 2017-10-28T20:40+01:00
+ - Same as 0.003_002
+
+0.003_002 2017-10-14T18:55+01:00
+ - Fix bad version causing test failures
+
+0.003_001 2017-09-23T22:20+03:00
+ - Update included Brotli library to v1.0.1
+ - [BREAKS API] remove the undocumented "set_dictionary" function from
+    both IO::Compress::Brotli and IO::Uncompress::Brotli because
+	Brotli v1.0.0 dropped support for custom dictionaries
+
+0.003 2017-09-16T23:40+03:00
+ - Same as 0.002_002
+ - Update included Brotli library to v0.6.0
+ - [BREAKS API] unbro now takes two parameters due to the removal of
+   the BrotliDecompressedSize function
+
+0.002_002 2017-09-09T18:10+01:00
+ - Update included Brotli library to v0.6.0
+ - [BREAKS API] unbro now takes two parameters due to the removal of
+   the BrotliDecompressedSize function
+
+0.002001 2016-09-08T23:09+01:00
+ - Use gmake (if available) to compile the brotli library
+
+0.002 2016-08-28T00:33+01:00
+ - Thanks to Quim Rovira, Ævar Arnfjörð Bjarmason, Marcell Szathmári
+   and Mattia Barbon for all changes in this version
+ - Use a git submodule to embed the brotli repo
+ - Modernise calls to deprecated brotli decoder APIs
+ - Add brotli encoder bindings
+ - Add more tests
+ - Add a command line tool (bro-perl) that imitates the official bro
+   tool
+ - Make XS code look nicer
+
+0.001001 2016-01-01T11:32+02:00
+ - Add BUILD_REQUIRES
+
+0.001 2015-12-31T21:02+02:00
+ - Initial release

@@ -1,0 +1,168 @@
+0&&<<''; # this PGP-signed message is also valid perl
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+# CHECKSUMS file written on Mon Jun  2 17:52:28 2025 GMT by CPAN::Checksums (v2.14)
+$cksum = {
+  'Mozilla-CA-20230801.meta' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => 'd8b0a8c855b131d7dafcf70bf335df2a',
+    'mtime' => '2023-08-01',
+    'sha256' => '880e2bb35dc81a59221a313705e6ed7dd88f6fe965277ac5732d0cff9eb21921',
+    'size' => 1447
+  },
+  'Mozilla-CA-20230801.tar.gz' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => 'ebd1da360977f6504b902e6a6a4d6916',
+    'md5-ungz' => 'c4c41f4478f6876cea82941dcc815bc6',
+    'mtime' => '2023-08-01',
+    'sha256' => '8066a15bcbec7bcf691e756ea07c8b710e754c76a5e73ae20ac32298f30dd56a',
+    'sha256-ungz' => 'fc6b0f4653ac84a8c0302fe8275da69749008fe707071c16ee2435c2602a75d7',
+    'size' => 136930
+  },
+  'Mozilla-CA-20230807.meta' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => '41851563e0d7aeaf493edd186b9ac9d9',
+    'mtime' => '2023-08-07',
+    'sha256' => '9f56f04eee91ebd7aee0826636c7ea3ddd14aad85cd6372fca33ed6ea63ec4ab',
+    'size' => 1295
+  },
+  'Mozilla-CA-20230807.tar.gz' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => '8b7d027d3c5c77703a935a83fe691dfd',
+    'md5-ungz' => '106db9f07d214041825eb76c100c21a9',
+    'mtime' => '2023-08-07',
+    'sha256' => 'cac569d2f73337e6314c0a73fc12f4f6648b7fb3941b2e82623df8e1573b69aa',
+    'sha256-ungz' => '55ac7b63e61fcd33b8edce303ac56b9a742581bc45d4a4eefac5e4548ca119a7',
+    'size' => 140197
+  },
+  'Mozilla-CA-20230821.meta' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => '19e3004afbb9c6b332c7ad0d88b4670b',
+    'mtime' => '2023-08-21',
+    'sha256' => '532d72117802bf9c4ea44e1481fec0ae225f20681bc243f0b49045ca5c878d67',
+    'size' => 1326
+  },
+  'Mozilla-CA-20230821.tar.gz' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => 'a9b7b700e651cd74130edf7432f8657f',
+    'md5-ungz' => '612a001cb7aee60244a0cbd6776f388c',
+    'mtime' => '2023-08-21',
+    'sha256' => '32e1d0045299004045b9c4d16c2daae453a216208873deea2440f71260a7cda1',
+    'sha256-ungz' => '24a33fd826b317b0ad8a35776b58c0b9683567773918dfdc18f1058f9625fa85',
+    'size' => 143864
+  },
+  'Mozilla-CA-20231213.meta' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => '4d8996a58e7c1e8d8137614e4130b216',
+    'mtime' => '2023-12-13',
+    'sha256' => 'f8e32b7e039f436edf6b40858e16b5a94396c2490e65ed96603c5beefa1022a2',
+    'size' => 1326
+  },
+  'Mozilla-CA-20231213.tar.gz' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => '680e2107973ee6f461e3c0ab57066489',
+    'md5-ungz' => 'dcd79cf7bf67eff4b789bbbceb4e2583',
+    'mtime' => '2023-12-13',
+    'sha256' => '421a12ba7cef443bd368671cee9c9b46a8b55c2ccf7ac76c42f99e23a06115df',
+    'sha256-ungz' => 'fc061b842e3f6e4893b676af5b9c1dcb1c399f88c9a10effdd7827c410bbddb3',
+    'size' => 147108
+  },
+  'Mozilla-CA-20240313.meta' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => 'da7340addbaf229d72390b89f2bee71f',
+    'mtime' => '2024-03-13',
+    'sha256' => 'dcbefe040205eb477c8271b50556c182cd4953d9d2d0b9c9cdde89f7f14d7c04',
+    'size' => 1326
+  },
+  'Mozilla-CA-20240313.tar.gz' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => 'e4b76277c8a93ed894814e00db6d59ca',
+    'md5-ungz' => '0f7fa6c43113b8b0144d6592bfff5339',
+    'mtime' => '2024-03-13',
+    'sha256' => '624873939e309833894f881464a95dfe74ab77cab5d557308c010487161698e7',
+    'sha256-ungz' => 'e063ab956019f6f13eefebc08bcdfc87e5feabfdfe19646dbddf14d162fec757',
+    'size' => 149129
+  },
+  'Mozilla-CA-20240730.meta' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => 'aaf49670fd57611295585e1acd9e9f19',
+    'mtime' => '2024-07-30',
+    'sha256' => 'c2646088a6a7edc0e6eeac375d963f742f86a4ecf72dab3179f71bb8d64b306e',
+    'size' => 1326
+  },
+  'Mozilla-CA-20240730.tar.gz' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => '5e1c97b65ef6fb4ecb07d0d01b3c655e',
+    'md5-ungz' => '8c8549180d1a780ea3e75399ab7717e7',
+    'mtime' => '2024-07-30',
+    'sha256' => '55bbee1875a905616e0c39457245f94f8173227fbe906f643673f5adadedf863',
+    'sha256-ungz' => '195a183fc3aaba110d60d4f0eff0dc5fa39aa9268462cb90b138c4b03d14ef5c',
+    'size' => 148483
+  },
+  'Mozilla-CA-20240924.meta' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => 'ea51da3a10aeae24854af91119c2b237',
+    'mtime' => '2024-09-24',
+    'sha256' => 'd3848a10357cde78eb5aeca46ffebc38d6f3e9eeeca6d502ddb1981ee0aaee74',
+    'size' => 1326
+  },
+  'Mozilla-CA-20240924.tar.gz' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => 'dad624e6dce1d5f87dbb6268395df180',
+    'md5-ungz' => 'cc3ee032c6aa8bb10ef80d405b9ff783',
+    'mtime' => '2024-09-24',
+    'sha256' => 'c4b1412bbc37dff8cf29af6f92cb47defbe90eebcbc29e407a98638f7a31bcd0',
+    'sha256-ungz' => 'f1d07e2384a6be0ff99c799a79f55dc6f5a2b502f8ac2d4fdeede6bbb825ae42',
+    'size' => 152425
+  },
+  'Mozilla-CA-20250202.meta' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => 'b078f18aae9fd39aceb2f6ad92fffefd',
+    'mtime' => '2025-02-02',
+    'sha256' => '09868e37305f050ab29176fad65b350eb667ba3dab3624fed8b82e66c4097b34',
+    'size' => 1326
+  },
+  'Mozilla-CA-20250202.tar.gz' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => '30eab86485173e35862ac0296e26d1ec',
+    'md5-ungz' => '0d5701004cfc084868289713ad252dd5',
+    'mtime' => '2025-02-02',
+    'sha256' => '32d43ce8cb3b201813898f0c4c593a08df350c1e47484e043fc8adebbda60dbf',
+    'sha256-ungz' => '89ca2d2b0171091a127a97339bb4a0c87f7d5372c9e6b91fd48054701a9eab05',
+    'size' => 149880
+  },
+  'Mozilla-CA-20250602.meta' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => '1c0cd65a9eea1e0e9e85984d00a685f0',
+    'mtime' => '2025-06-02',
+    'sha256' => 'bf2a447b406a377dbb9b717481f7bfc33c0ec923b91a781b06ecec66f1718e7a',
+    'size' => 1326
+  },
+  'Mozilla-CA-20250602.tar.gz' => {
+    'cpan_path' => 'L/LW/LWP',
+    'md5' => 'c28848458e8ae2325e46b15a243f1918',
+    'md5-ungz' => '6b93318bfe4b877171308bc7313b2b76',
+    'mtime' => '2025-06-02',
+    'sha256' => 'adeac0752440b2da094e8036bab6c857e22172457658868f5ac364f0c7b35481',
+    'sha256-ungz' => '1c7855006894fc63a9a117bb158694bc894940acd521c138880d396bf11589cb',
+    'size' => 146252
+  }
+};
+__END__
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEFmDJ58SskZU/SYByfFMCKkCtaxsFAmg95NwACgkQfFMCKkCt
+axt9vQ/9HleK753RzP0N1NikHoqJFvyuo1kDduNpjROSND5w/jXdiYCAzXj98dL8
+xBOl1kOODCdOlGEs03HN/F0JDQKq36GMHUsoZ1dnSaYQJNBuyYwfwVEVbQFfcMC5
+dmiaBaah+wa8p7+O7X5VD1g6B+BrjGMMT21npFVyhrC6FtlT1LJXpsEd6U0gXjb0
+jSdQAOg+QiM4LEhNTrQFoVxbk7sUuAfjtzg5PS/LGfOS+sjIkMWLVPV9VSNH6EUL
+NPRKsdRkjT0hg+ObVDNpz/PnpHgbaUbE5ZeEb6SiUhZ4GpsxZAGWiEtaSay1s+uO
+6eXbc+VH9KBGgNDpz67cnTxj2RjQgzRXe9/mIXsIHuZd+qPKFW4sMZeCNIwsW3Zf
+vVg0pBjPLq+KhMr62cv9h40UK2UOcZrAbUjhdhRid+zP2kWowbz+pn7x3DdAFh+U
+ajHZUVdHJnZmt2bIZUy7B8SzGjvSE1K8eSHgXr+Xki+wgSeMqYHA2iMU8OeZvJ4q
+K+1Pd8XtBIvjBCe5OodVALhZ8LE421kOfwGqaUn3p+ZBdSSj/EP9jT5pSReIFGf6
+PxcftgX6uV4FFCUEMkGuqeXx7NiA+bSvmHW4XiVHIfCJtz6bkGnKtV+Ynw2BHPUM
+IGVPVyigUU4drOgghDPuC0LR1UEk9SasP6nhsMwojZadi3c5KE8=
+=HcK0
+-----END PGP SIGNATURE-----

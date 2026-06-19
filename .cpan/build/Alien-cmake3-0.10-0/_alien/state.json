@@ -1,0 +1,27 @@
+{
+   "args" : [
+      "root",
+      "_alien",
+      "meta_prop",
+      {}
+   ],
+   "install" : {
+      "download_rule" : "warn",
+      "mm" : {
+         "distname" : "Alien-cmake3"
+      },
+      "my_old_cmake" : "/data/data/com.termux/files/usr/bin/cmake",
+      "my_old_cmake_version" : "4.3.3",
+      "patch" : null,
+      "prefix" : "/data/data/com.termux/files/usr/lib/perl5/site_perl/5.42.0/aarch64-android/auto/share/dist/Alien-cmake3",
+      "root" : "/data/data/com.termux/files/home/.cpan/build/Alien-cmake3-0.10-0/_alien",
+      "stage" : "/data/data/com.termux/files/home/.cpan/build/Alien-cmake3-0.10-0/blib/lib/auto/share/dist/Alien-cmake3"
+   },
+   "plugin_instance" : {},
+   "runtime" : {
+      "alien_build_version" : "2.84",
+      "install_type" : "share",
+      "perl_module_version" : "0.10",
+      "prefix" : "/data/data/com.termux/files/usr/lib/perl5/site_perl/5.42.0/aarch64-android/auto/share/dist/Alien-cmake3"
+   }
+}

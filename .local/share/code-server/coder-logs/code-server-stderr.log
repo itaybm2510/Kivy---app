@@ -1,0 +1,27 @@
+[17:32:12] Error: Unable to retrieve mac address (unexpected format)
+    at bH (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/server-main.js:78:20289)
+    at SH (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/server-main.js:78:20666)
+    at async file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/server-main.js:78:20583
+    at async Promise.all (index 2)
+    at async bq (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/server-main.js:197:413)
+    at async Aq (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/server-main.js:198:1392)
+[17:32:12] Error: Unsupported platform
+    at Object.<anonymous> (/data/data/com.termux/files/usr/lib/code-server/lib/vscode/node_modules/@vscode/deviceid/dist/index.js:24:11)
+    at Module._compile (node:internal/modules/cjs/loader:1705:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1838:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Module._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at cjsLoader (node:internal/modules/esm/translators:309:5)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:202:7)
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+    at async kH (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/server-main.js:78:20973)
+    at async Promise.all (index 4)
+    at async bq (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/server-main.js:197:413)
+    at async Aq (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/server-main.js:198:1392)
+File not found: /data/data/com.termux/files/usr/lib/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
+File not found: /data/data/com.termux/files/usr/lib/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
+File not found: /data/data/com.termux/files/usr/lib/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
+File not found: /data/data/com.termux/files/usr/lib/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm

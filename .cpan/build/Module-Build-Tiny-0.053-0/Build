@@ -1,0 +1,4 @@
+#!/data/data/com.termux/files/usr/bin/perl
+use lib 'lib';
+use Module::Build::Tiny;
+Build();

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetX24 | Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #020617; }
+        .neon-label { text-shadow: 0 0 8px #06b6d4; }
+    </style>
+</head>
+<body class="text-white min-h-screen flex flex-col justify-center items-center p-6 max-w-md mx-auto shadow-2xl">
+
+    <div class="w-full bg-[#050b14] border border-cyan-500/20 p-6 rounded-2xl space-y-6 shadow-xl">
+        <div class="text-center">
+            <h1 class="text-2xl font-black tracking-wider text-white" style="text-shadow: 0 0 10px #06b6d4;">BETX24</h1>
+            <p class="text-xs text-gray-400 mt-1 uppercase tracking-widest">Create Player Account</p>
+        </div>
+
+        {% if error_msg %}
+        <div class="bg-red-950/40 border border-red-500/50 text-red-200 text-xs p-3 rounded-xl font-medium">
+            <i class="fa-solid fa-triangle-exclamation mr-1"></i> {{ error_msg }}
+        </div>
+        {% endif %}
+
+        <form method="POST" class="space-y-4 text-xs">
+            {% csrf_token %}
+            
+            {% for field in form %}
+            <div class="space-y-1.5">
+                <label class="block font-bold text-cyan-400 uppercase tracking-wider">{{ field.label }}</label>
+                {{ field }}
+                {% if field.help_text %}
+                <p class="text-[10px] text-gray-500 leading-relaxed">{{ field.help_text }}</p>
+                {% endif %}
+            </div>
+            {% endfor %}
+
+            <button type="submit" class="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-black py-3 rounded-xl transition-colors uppercase tracking-wider mt-2">
+                Register Arena Account
+            </button>
+        </form>
+
+        <div class="text-center pt-2">
+            <a href="/login/" class="text-xs text-gray-400 hover:text-cyan-400 transition-colors">Already have an account? Login here</a>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('input').forEach(input => {
+            input.className = "w-full bg-[#0f172a] border border-gray-800 rounded-xl px-4 py-2.5 text-white placeholder-gray-600 focus:outline-none focus:border-cyan-500 text-sm font-semibold transition-colors";
+        });
+    </script>
+</body>
+</html>
+

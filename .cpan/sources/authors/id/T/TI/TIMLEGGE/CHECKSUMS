@@ -1,0 +1,1372 @@
+0&&<<''; # this PGP-signed message is also valid perl
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+# CHECKSUMS file written on Fri May 29 19:54:26 2026 GMT by CPAN::Checksums (v2.14)
+$cksum = {
+  'Authen-SASL-XS-1.01-TRIAL.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'a30bdef31bace0cc225c0a3d8bdabc69',
+    'md5-ungz' => 'dcb8080a2007be6cc2a8e856b277e433',
+    'mtime' => '2026-01-21',
+    'sha256' => '5cda9f03a3327d165d215b574c65d490d77037e0d019aee86ba03eab7b0cdf8f',
+    'sha256-ungz' => 'ddacb5f9dedd6dbe0ed9f94bf6f52605cfd42eeb410a37774a88433b6269d909',
+    'size' => 36456
+  },
+  'Authen-SASL-XS-1.02.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '607d9da30b347e0629032fee506ec532',
+    'mtime' => '2026-01-22',
+    'sha256' => 'd7e5d9b924ac87bc7ec485fcbf630cc1f3a3fd87f16cbbee8761281893f6d06c',
+    'size' => 1625
+  },
+  'Authen-SASL-XS-1.02.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'b30858d894504dea6be8716f21ff3d66',
+    'md5-ungz' => 'd8e5856e9b0f0cbb9a97dbf4d8a00852',
+    'mtime' => '2026-01-22',
+    'sha256' => 'fa4fb562aea2a2e2f3a5de677c4188ee721b7e18ce771bd1a4b92b22d2461f47',
+    'sha256-ungz' => '3da9d0aaa6c7f56fd6550b5528d6626c751fa903eefc886cbb8fd17c911e58b3',
+    'size' => 36684
+  },
+  'Barcode-ZBar-0.10.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'e0a7f102504e59beb138c4a0a0c493fb',
+    'mtime' => '2022-02-08',
+    'sha256' => 'b5beb7fd1b09ace01f61f11b7633099fbf5893ee0570e08d88d44797ca43a919',
+    'size' => 1682
+  },
+  'Barcode-ZBar-0.10.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '1b078923abd4d6fac72fe42d651ac12c',
+    'md5-ungz' => '2951da03a388d9451e94cc82db190945',
+    'mtime' => '2022-02-08',
+    'sha256' => 'f19c820964df4fa96518ea42d6bfb202fc952ea222c8e82a6034cf06373230c1',
+    'sha256-ungz' => '69fdedc758b5b225843f04271883669b738b3e81ddf21ee763bee598f8e69d1c',
+    'size' => 63793
+  },
+  'Convert-ASN1-0.34.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'c3979cd677912427dda85ec0eac50493',
+    'mtime' => '2023-08-07',
+    'sha256' => 'd21919e513d9c0528ba4d394ef05704d0ef647e4cfd96bce9afeab21c31e5e10',
+    'size' => 1409
+  },
+  'Convert-ASN1-0.34.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'cca63088fdd5c3665a2119ee29133f6a',
+    'md5-ungz' => '45bf851ec9f3355e2617203863a710a4',
+    'mtime' => '2023-08-07',
+    'sha256' => 'a628d7c9d390568fb76359975fa03f626ce57f10dc17980e8e3587d7713e4ee7',
+    'sha256-ungz' => '7001b153c0c73beca9ba45dd442f270cdee44eee88c40c46a171c557eaa570ab',
+    'size' => 79762
+  },
+  'Convert-PEM-0.13.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '731134bc99f89e5d689a2f4e3d36afde',
+    'mtime' => '2024-12-03',
+    'sha256' => '54312777cc744a170fa6d7967c0befd66ae0303579bd0e15c8f964e6a93f7663',
+    'size' => 1543
+  },
+  'Convert-PEM-0.13.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'bfbebff5d145fe7120a3a2372f5f924f',
+    'md5-ungz' => 'e91c385e1bc8626b14d87f766950d45e',
+    'mtime' => '2024-12-03',
+    'sha256' => '799fa32c270081f4e6292b0ddf5180952710a8a4be132e907bda3176a7bd1c23',
+    'sha256-ungz' => 'c1e4aa4380dd9d34ed806c777fba7c569b3549841060e3d0f21e441e68e62453',
+    'size' => 47570
+  },
+  'Crypt-CBC-3.05-TRIAL.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '337e665620dc537d3481fd999a977f6e',
+    'md5-ungz' => '431b0a3112aba5b797962114fac8e0d8',
+    'mtime' => '2025-07-21',
+    'sha256' => '80ffc008f36db7a1b87770dbe1b2335b0ef055ab0de747938cd38e131d3b38e0',
+    'sha256-ungz' => '4c2a6bf300537c6e7a0fffa23fa53f646336a4e4200f44942d202c340218e664',
+    'size' => 40947
+  },
+  'Crypt-CBC-3.06-TRIAL.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '469bfbf65312e506c8af58f843de6363',
+    'md5-ungz' => '54289b2b2a5ce0f0ecbdccc19b956eda',
+    'mtime' => '2025-07-26',
+    'sha256' => '6a49e8d38a500e7750c6d770f1cdb303ce0ec67c3669fe6228425e652e7b4077',
+    'sha256-ungz' => '2527bb73702fe8544da90d78a2ed370a1261ea6949527d18f8ab1085f02ceda4',
+    'size' => 51969
+  },
+  'Crypt-CBC-3.07.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '71f30c4ac0452908b8600530d985c542',
+    'mtime' => '2025-07-27',
+    'sha256' => '79169792709633d57eab60e127427f43d0bcf76008e17332d9d48f7c59e7bd0b',
+    'size' => 2761
+  },
+  'Crypt-CBC-3.07.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'ccd56523f2477df076ab7756825d1639',
+    'md5-ungz' => '9b18e284075e3f1fd8fa6737ff1663d1',
+    'mtime' => '2025-07-27',
+    'sha256' => 'f4ddfb4dd6ac5013df8341bfa734d9c9ee0f10e2e71215ec8fe5bf780b7c9127',
+    'sha256-ungz' => 'c3be0b0544e05cecd0f616582b69f1a88f2a738d50cd5b999d57768d620886fb',
+    'size' => 52298
+  },
+  'Crypt-DES_EDE3-0.03.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'e56fde9dd211d8d48fc252a01ddd84f1',
+    'mtime' => '2024-10-22',
+    'sha256' => '4e66d2623a6b7742bcbb91b933f02c31290124cf1885641ad31a0451cfd162f9',
+    'size' => 1242
+  },
+  'Crypt-DES_EDE3-0.03.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '5d4039c121a5f27af00e08d5bac8b089',
+    'md5-ungz' => 'b68b4e55a09a827bb2e2a4718a93ba25',
+    'mtime' => '2024-10-22',
+    'sha256' => '28592db7b9e34745aa91f3e19e5dbbb83aaf472a29e707b9791d0d02b3e227f5',
+    'sha256-ungz' => 'a1fbda8df80cafe2920660f0abc9d7432770cef719d34a1c09e6772ec17e135a',
+    'size' => 12358
+  },
+  'Crypt-DSA-1.19.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '1dd00f7f72092872ce5cc880cfe8e996',
+    'mtime' => '2024-12-04',
+    'sha256' => '7e43ea1fd4bdcc96e6a3dfff036b9b4ec47c229c1d2a5b59b21056b3555d5ce7',
+    'size' => 2042
+  },
+  'Crypt-DSA-1.19.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'b882a7255428d715e949d0989536eb8f',
+    'md5-ungz' => '8ab1f48f8ef6311c3fa922c3d5a8051d',
+    'mtime' => '2024-12-04',
+    'sha256' => '1d192241b587f0a41b9f1a38bb90c2e10dcf31104eaaaf35d4803b68ff6cda9c',
+    'sha256-ungz' => '95de6cae7d2dec89cc1fb29f6ca003615de63cb9d5fc140388d248b80b106f25',
+    'size' => 30475
+  },
+  'Crypt-DSA-1.20.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'f261b00c809ec0b4a4231941efaddf0d',
+    'mtime' => '2026-05-15',
+    'sha256' => 'b73f50e73f96e7c8251583015cafaface0f2cff6c81bba1158dda3f71746446f',
+    'size' => 2103
+  },
+  'Crypt-DSA-1.20.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '3e1fd267c848e55b6ffaeb436876c370',
+    'md5-ungz' => '57e9a15a10d6a55477d95172f6b03f05',
+    'mtime' => '2026-05-15',
+    'sha256' => 'e5e98ec85737339a2881b9a33744639b1bcc135db135bc9a96b52ea44d218e4d',
+    'sha256-ungz' => 'bbbb2d4e6ea1a9e578ac0d0dfc81091d2aeae2ef417566c7fc04f9b26acd76b6',
+    'size' => 29938
+  },
+  'Crypt-DSA-1.20.tar.gz.sigstore.json' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '9f7735b80ad9f716aa0ceadc817a1747',
+    'mtime' => '2026-05-15',
+    'sha256' => '03141f97b98ce1829d30bc21e25fd852106e140b503646b4bd50f46922e20e58',
+    'size' => 6075
+  },
+  'Crypt-NaCl-Sodium-2.000-TRIAL.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'f97573291abb18ef7f976b839db43753',
+    'md5-ungz' => '9ba0c539838faa6433c4bd0e607cd43e',
+    'mtime' => '2026-02-11',
+    'sha256' => '5c0e1599167696446fae72fec874976d87dcf084cc99bcbabf9c1d9cc8fc402c',
+    'sha256-ungz' => '4c8a47b7137f0cc832794b9829774e1fb5fa9254d72ba57e223f3d4f312a07c8',
+    'size' => 971851
+  },
+  'Crypt-NaCl-Sodium-2.001.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'e8b842c72772ad81f9469b87cd267f68',
+    'mtime' => '2026-02-12',
+    'sha256' => '3ed000d8ba44180ad9d2918854ba55f911315447cb9ee99a0c87af86f50f251d',
+    'size' => 3340
+  },
+  'Crypt-NaCl-Sodium-2.001.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '317d965deacc231acf1a6f7997d4c5e5',
+    'md5-ungz' => 'f2adcfdcfe9a6ddb841683256a842fb8',
+    'mtime' => '2026-02-12',
+    'sha256' => 'ee792ebb0c3e75cc518eab1bf952859a54f8fb1c9afc8bdb7490a1453287ae79',
+    'sha256-ungz' => '82162155d6b44b202cbe150a6c21a071f7a392c876e740b48fb47af717bd26ef',
+    'size' => 971952
+  },
+  'Crypt-NaCl-Sodium-2.002.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'baacce83ba871744a6791bdcbe8e2967',
+    'mtime' => '2026-02-22',
+    'sha256' => 'bb0b78706860558b9e7be0860a443a3ba51f3836fc047084f4985a6d5437ae40',
+    'size' => 3340
+  },
+  'Crypt-NaCl-Sodium-2.002.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '8bcde10371c1ed6b66b4e0b42b07952a',
+    'md5-ungz' => 'cae671aa1e095f74ae20b0c150f7cf9d',
+    'mtime' => '2026-02-22',
+    'sha256' => 'd11da26f01902fbfe171cb96aa9603d6e8c5521802e9622518d66106c5e8b2dc',
+    'sha256-ungz' => '1ae690418e370fb6d5d6271b15068c36c9f8acd47c33feffbc8dfa1465f92348',
+    'size' => 974071
+  },
+  'Crypt-NaCl-Sodium-2.003.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '3db8108055c9a16b466be3b628d7a36e',
+    'mtime' => '2026-03-08',
+    'sha256' => '5131ff3f7b974be771afcc6dd1525564c513a5087866907878ba4e4933efb0b1',
+    'size' => 3378
+  },
+  'Crypt-NaCl-Sodium-2.003.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'c9bdb5f31e2e1079404190110692b673',
+    'md5-ungz' => '79a5aa512266e65ae272e9b5c86b4760',
+    'mtime' => '2026-03-08',
+    'sha256' => '7a5818f0cbafe42e40e4c310b75b5db02f2847cf59a8fb4e8202034ad4a641c0',
+    'sha256-ungz' => '49e46445542552444a48bb4b8871c56aa3ccfbc5052b6a7231866d61e106f431',
+    'size' => 974141
+  },
+  'Crypt-OpenPGP-1.19.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '0d0c73c5db087cc083fc32db8a23e1de',
+    'mtime' => '2024-12-22',
+    'sha256' => 'f6f7149566b630906dc6abe5438989a038ea669760025e1a5bdb9c6f100ec5f7',
+    'size' => 2021
+  },
+  'Crypt-OpenPGP-1.19.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '5e65c6da40f1047d4ae4870eca1ffc55',
+    'md5-ungz' => 'a031958b51793bff446d677aa8ca6289',
+    'mtime' => '2024-12-22',
+    'sha256' => 'f4592864d219d74cd01aa6ab9449b5cadab449b5a410ebb7ae4d832ffbf6ac2a',
+    'sha256-ungz' => '5e6dd57ac274af5402df9be49b456e6d89621d134b03cdf9fcb864a969fcbeee',
+    'size' => 136727
+  },
+  'Crypt-OpenSSL-AES-0.21.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'a9f17309283b06715a6d52d1604123d5',
+    'mtime' => '2024-06-10',
+    'sha256' => 'a79165d936be155fbbd355f265e307ccd316338db712777784c25746fba69f7f',
+    'size' => 2174
+  },
+  'Crypt-OpenSSL-AES-0.21.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '0bab49eb8b899e94df91eaf4940b41e1',
+    'md5-ungz' => '80136b11c697f9689b326472db678a1e',
+    'mtime' => '2024-06-10',
+    'sha256' => '0f699d73703af4e54446295dce395f66b95efc4c6ba45d4c69eff12d668792ee',
+    'sha256-ungz' => '3abb9f210763aa3efb5003b62621ba1ff0aa4a4767a1db0972d3dd1c0702bda8',
+    'size' => 157184
+  },
+  'Crypt-OpenSSL-AES-0.22-TRIAL.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'fc9c4e461a468e1fc7aedbeff1b80fa9',
+    'md5-ungz' => 'a3e9bbd4b124ea93236585143cc89c20',
+    'mtime' => '2026-04-03',
+    'sha256' => '9c2e8dc89650afc1fc2e381211c3dbb2c65cb02752cb5ec28cc7d4c46cec35d8',
+    'sha256-ungz' => '2e34e3864d4408adee413a6cc7e75af5d5d8cfca41d9ffdee4fedcef4ef24b09',
+    'size' => 162749
+  },
+  'Crypt-OpenSSL-AES-0.23.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '8a779dbf7708a4f31bd434a2ca97e1ff',
+    'mtime' => '2026-04-03',
+    'sha256' => '0569df66d609e468c0a98ac745858e9f6003cfee4a23ecc62b3e81f597c62508',
+    'size' => 2177
+  },
+  'Crypt-OpenSSL-AES-0.23.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '503c5052eb04a21378714684a508da93',
+    'md5-ungz' => '89618cb9e4d44bebe9fc47a286153329',
+    'mtime' => '2026-04-03',
+    'sha256' => 'a70bc89c8d5eabde9b83dec7131b756c247b5c1fb8980f23a42bdd47751d4887',
+    'sha256-ungz' => '98b4091156278181069808d49af83015b7795a6da6444212676ef1119a3c6ed9',
+    'size' => 162810
+  },
+  'Crypt-OpenSSL-Blowfish-0.08.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'dbfffdd885ba9cc84f2fec19761c189a',
+    'mtime' => '2023-11-28',
+    'sha256' => '2a0679c5c66aba3a9733ff2d0644b4794db792e684f9f16b7c8e7d19f58274b6',
+    'size' => 2089
+  },
+  'Crypt-OpenSSL-Blowfish-0.08.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '57a274a4c7a5663ef29f9d335e164915',
+    'md5-ungz' => '16903f0ba180703321be82eca1bfa1c9',
+    'mtime' => '2023-11-28',
+    'sha256' => '92cc10cf7026c8cb2d698f9b5c011ba0d65618f92bc68c1ec0cdbbecb8c4e932',
+    'sha256-ungz' => '939a3a4343208dfe09320f664981e7419e4ad1ac81c3046f557ec694c522d012',
+    'size' => 145374
+  },
+  'Crypt-OpenSSL-ConfiguredAPI-0.03.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'f27fed31f9cf22d1646e40296e97cdb6',
+    'mtime' => '2023-07-26',
+    'sha256' => '1266f6eea79613b8f7d40962a06fe04969295a34965cea0256e81cd5371b73fd',
+    'size' => 2025
+  },
+  'Crypt-OpenSSL-ConfiguredAPI-0.03.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '767191dd1172172c7c5dd3591caa57fa',
+    'md5-ungz' => '96d8cd0e7f144105dc8b6551e0ede6bd',
+    'mtime' => '2023-07-26',
+    'sha256' => 'abf08d5fe7ff9c16a1e597c682d9c214cd455a061b6b016522bb911df0005ed9',
+    'sha256-ungz' => 'fd8308c4e5fbaa8d610cc5e40a65a9c04b127102da034be10fe671f9b4270ab4',
+    'size' => 134055
+  },
+  'Crypt-OpenSSL-PKCS10-0.34.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '201f41a4c2b17460cc8245a1447b2e07',
+    'mtime' => '2025-01-25',
+    'sha256' => '5deee7abae391de7c3a8ec73b9fde2deae02da20b859536144db8c428b887630',
+    'size' => 2419
+  },
+  'Crypt-OpenSSL-PKCS10-0.34.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '395cba2fc1f6053483dc454917864a69',
+    'md5-ungz' => '6fef7933d42861ee50fb2b1b73c8e34a',
+    'mtime' => '2025-01-25',
+    'sha256' => '6d7f4f23fccb4c10841a03e4576120b1a7cab77b3955fda845b32e350e010eff',
+    'sha256-ungz' => '00107f8bd267acec5e4cd31c4f6cac203cf1e8aec01183417e298edf30d3fc3e',
+    'size' => 158105
+  },
+  'Crypt-OpenSSL-PKCS10-0.35.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '7e883f77e47568f8e08780cac854cbfc',
+    'mtime' => '2025-02-05',
+    'sha256' => '362f394ab499d49034c3971597adad8cbd6cae59ee7291f5c73f7484d5b4168e',
+    'size' => 2419
+  },
+  'Crypt-OpenSSL-PKCS10-0.35.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'e3f38208546120458d5c11a6b3cabd1e',
+    'md5-ungz' => 'b46ebbc96a7af13bce338ef3531004bd',
+    'mtime' => '2025-02-05',
+    'sha256' => 'cc3a7b53b79688cd4d28cc74c1f6d26bbcebf6c546d779b4db38145715337b28',
+    'sha256-ungz' => '0cf22039ae0db8029b55637ea23793bf8f112c0649074c233b35d868f9ee4203',
+    'size' => 158173
+  },
+  'Crypt-OpenSSL-PKCS10-0.36.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '154242aa96ffa310e5d879f9be694c99',
+    'mtime' => '2026-01-18',
+    'sha256' => 'd0391c6d22d4afebdc01510e0d72965614dcef29184a7711b33d8f9ea1dfb2e3',
+    'size' => 2419
+  },
+  'Crypt-OpenSSL-PKCS10-0.36.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'ea605b28a3fca9ce9a7336ea3f51edd8',
+    'md5-ungz' => '5405f78cacad07a1012d558858370140',
+    'mtime' => '2026-01-18',
+    'sha256' => '7ee0f1c8813a5523c3be40a6f0a5717deb3f022069a5463bb76067241945e7ac',
+    'sha256-ungz' => '1bd5a05a454c34cc4e205e2149afe0b32faba363169090a26e84578759e2ffdf',
+    'size' => 158261
+  },
+  'Crypt-OpenSSL-PKCS10-0.37.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '46a501af16f21e848b780c1473d2b587',
+    'mtime' => '2026-01-18',
+    'sha256' => '4c01c3281bef4f35159d5e2eba9b163450553fbccc61e758a2158648347f37f6',
+    'size' => 2419
+  },
+  'Crypt-OpenSSL-PKCS10-0.37.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'fc68e3a1d0cf17f01329175c4686f9e0',
+    'md5-ungz' => 'f57afc673e2f4c80f34e6a606f380d09',
+    'mtime' => '2026-01-18',
+    'sha256' => '8aeab8b648f09988ab259092d5327ee1db3d668695007595d87c6fbe0fab5e08',
+    'sha256-ungz' => '959f7363642a05aef7f0ea9324c03c2b2141a59284389784062a213d15826998',
+    'size' => 158388
+  },
+  'Crypt-OpenSSL-RSA-0.38.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '4433ab3cbd32cb7628df4f510c9e2bc8',
+    'mtime' => '2026-04-23',
+    'sha256' => '8adf7b557640caccb441a57c816e8b86831f934aea8cb918620fa6ee164e4069',
+    'size' => 1735
+  },
+  'Crypt-OpenSSL-RSA-0.38.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'c0aa61456868a1502523314754e95b78',
+    'md5-ungz' => '9d735042a41e1dbe252c0f9b6bc2de98',
+    'mtime' => '2026-04-23',
+    'sha256' => '5a44073f7beabb52e60ac4cd06bafb66da84f47d6ad2c3c6019836af2705629b',
+    'sha256-ungz' => 'e30911fcc6441ed5df2924781613de9c12445a01f9d15964cb45ffa21e71f14c',
+    'size' => 59104
+  },
+  'Crypt-OpenSSL-RSA-0.39.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '0079e8e30b65514a4bb5b98f95f1477d',
+    'mtime' => '2026-04-23',
+    'sha256' => 'f3b5f529cfc1a8464548aa14629047cc94ae885be61901933dc13a4161b28c73',
+    'size' => 1740
+  },
+  'Crypt-OpenSSL-RSA-0.39.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '2cf059930599ffc3282128e7a53fb39a',
+    'md5-ungz' => '9a4dda4b46afa89d70021c29cffc38e8',
+    'mtime' => '2026-04-23',
+    'sha256' => '2589eb4a46f9d30c2a4757969702b22d53cb7f7190d73603fb10eba7870b62f3',
+    'sha256-ungz' => 'b729654c91c32e929b3360201b43fe5e182f3364fa9493f4379f0198b9b13892',
+    'size' => 60871
+  },
+  'Crypt-OpenSSL-RSA-0.41.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '2d689705d9f02a00c2f22d29d413014a',
+    'mtime' => '2026-04-24',
+    'sha256' => '6c484785c48ca18cab554d4c8beae6aa937287bdb51d6b2f50e180bc30b8002c',
+    'size' => 1740
+  },
+  'Crypt-OpenSSL-RSA-0.41.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '477e40637f2f22ad30bad0d319c0701e',
+    'md5-ungz' => '7ba858628cde7f73578ddbf4e184e8f1',
+    'mtime' => '2026-04-24',
+    'sha256' => '82fa839897b88e9c245b6265f3be26d3bc879cae4c7a8151fad4a307c3366822',
+    'sha256-ungz' => '5398258992df65ca4682b2fcf8ff4a3482a64638dec06e2d9f6a704aa5a08186',
+    'size' => 61393
+  },
+  'Crypt-OpenSSL-SignCSR-0.14.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'b6a0e97f9bba2fadc7e5d53b660782ca',
+    'mtime' => '2023-07-27',
+    'sha256' => 'b007c4b00e9ded2534cc8a2877a7f30c1d4fb2a3b3b2a17d0084a7e549480225',
+    'size' => 2282
+  },
+  'Crypt-OpenSSL-SignCSR-0.14.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '41c28be790508de61458b10321c40aaa',
+    'md5-ungz' => '497d31d176943a6adc0fc01b3dc57bc0',
+    'mtime' => '2023-07-27',
+    'sha256' => 'be0efcaf29a79c9ae671e6a981d4f6481240e18e319e1296489af33e5b2ba447',
+    'sha256-ungz' => '377376eb79d9efc51b5e4df09ec3a9d80a7b04afe926a4d5c58134931acde398',
+    'size' => 145708
+  },
+  'Crypt-OpenSSL-Verify-0.36.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'f33db86a76f03801f5fbe4ac0585e52d',
+    'mtime' => '2023-07-03',
+    'sha256' => '6c33f383157d5f44e67ec76dd5e63338f990bd4ea9a898a1637ea1ed91b66500',
+    'size' => 1796
+  },
+  'Crypt-OpenSSL-Verify-0.36.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '7ddeadcaac2476f97e4c45e6e4ce4703',
+    'md5-ungz' => 'e3b885e08c830f81ba7ce293651008e6',
+    'mtime' => '2023-07-03',
+    'sha256' => 'deefdae6b14877f590f08c4eb50e3cd3710aa3ee62412c08d183f55b3af73e9e',
+    'sha256-ungz' => 'fed0d572bd1b36dfb0e91d80c023f95b960e8de446ffe72bbac4818ab574a131',
+    'size' => 55194
+  },
+  'Crypt-OpenSSL-Verify-0.37-TRIAL.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'afe1ae3d49fb19b71886987ef01c73ca',
+    'md5-ungz' => '6edf298b9e3ff48ac71ec28ffebd716d',
+    'mtime' => '2026-02-01',
+    'sha256' => 'e07818f052c935f3a375174b9368d9e48803ca4f8f078fe7281d97899a4b3c6c',
+    'sha256-ungz' => 'ed041e0f95d572a16a50138bfe88ad07e6efdd2724253daf9e5da80ed3091039',
+    'size' => 56194
+  },
+  'Crypt-OpenSSL-Verify-0.38.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '9ee70af81d1d55d1062811213e1b6402',
+    'mtime' => '2026-02-21',
+    'sha256' => '336204c86d7faf17d784f630db7485b6a0948cd3e5dbe7cae8f0fab548bf24c1',
+    'size' => 2005
+  },
+  'Crypt-OpenSSL-Verify-0.38.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'd7f071f8c078f7bd585fc54454dc7d63',
+    'md5-ungz' => 'a526ff09154ae39a36413e77f4c05e14',
+    'mtime' => '2026-02-21',
+    'sha256' => '25c60e4895451f40140630a62b587ded3bee5ca1ba547477a08e5b5ec905023f',
+    'sha256-ungz' => 'dce67aa90c919af2c378c028a71d2c04e4ebcfad6711e57007e7a23001c9e22c',
+    'size' => 56523
+  },
+  'Crypt-OpenSSL-VerifyX509-0.21.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'e08bd068471fbf7bee9dad96a59777db',
+    'mtime' => '2022-02-27',
+    'sha256' => 'b7701b600414166b45497ff347e3abe5e339a5395ecb7b860628f6f88062f987',
+    'size' => 1518
+  },
+  'Crypt-OpenSSL-VerifyX509-0.21.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '1b21a1e573caa28400745608388046e3',
+    'md5-ungz' => 'cdff07a5bfc246365f0a083f2b81b95c',
+    'mtime' => '2022-02-27',
+    'sha256' => '622d043ffb4724ca71f3c4c66b78ac52ebf4da969dc93f84f2c579fd24365c1f',
+    'sha256-ungz' => 'b26e83c8fdc28b41aee843eb5081bd3b87874fe390be2f96489cf70216a1217e',
+    'size' => 25139
+  },
+  'Crypt-Primes-0.51-TRIAL.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '53f0b7b30d21283238a897fff220a60e',
+    'md5-ungz' => '565db27a2d6dcb9f24a0047f132d3eb5',
+    'mtime' => '2025-01-25',
+    'sha256' => '95b4fdd368c044d849ab5c032a7e52cfd6e830211c2b6e290f7e509c90d7b7fc',
+    'sha256-ungz' => '12dc6bbb928b2dcc0b3f64e15e7d9f42e3f336075187ba3bc173bf4d156d3a25',
+    'size' => 151230
+  },
+  'Crypt-Primes-0.52.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '901d98563b3b257933ba72aa422f9fc4',
+    'mtime' => '2025-01-25',
+    'sha256' => '3cd7626baca0e08106673af93046eb3e3dbc8b6469ae31cc35839523b808206f',
+    'size' => 1931
+  },
+  'Crypt-Primes-0.52.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '0cdd30e9342b61d122f7f19663a54871',
+    'md5-ungz' => 'eede1194dca7f83eb462436fdb206c9b',
+    'mtime' => '2025-01-25',
+    'sha256' => '8d32c7f810c755359a96812cf916d42e2bb4450b5d1ea2044b7bf19077d7081f',
+    'sha256-ungz' => '3d3d56ec13ea9bba8d9a958e395386dee6bf5ae422fe90e0999dbd23f3ba770b',
+    'size' => 151272
+  },
+  'Crypt-Random-1.56.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'd058a58bafae435448fa4f878285a377',
+    'mtime' => '2025-02-05',
+    'sha256' => '0e4350c920f090b73669c394c402cc7d27d0e839427d172170b34cf6b59057e0',
+    'size' => 3134
+  },
+  'Crypt-Random-1.56.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '033a326d12c7ee790d6a910378bf623e',
+    'md5-ungz' => 'e9dd714ba92e271e80fdf9dc67be1938',
+    'mtime' => '2025-02-05',
+    'sha256' => 'e1cb37e58f1da29d75b34d8933cf638a10fdf1c58f056d078ef382fc1bbaf4d5',
+    'sha256-ungz' => '49fe96f6895e71db78569e6a2643b14332cc0f2edfd432e44fa3af8b0d845092',
+    'size' => 24592
+  },
+  'Crypt-Random-1.57.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '6eea48b231cb48b71864447cef27f739',
+    'mtime' => '2025-02-10',
+    'sha256' => '6861bd0bee07eea241b8b70c0a665a323fcac89d70ec66540736e6bcbd69a6ef',
+    'size' => 3194
+  },
+  'Crypt-Random-1.57.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'a7e704688eb08211de0e6885617e8982',
+    'md5-ungz' => 'bd3fc9cab4c5af453e6f6fde4a8ade1c',
+    'mtime' => '2025-02-10',
+    'sha256' => '9504676c0ce041103adfa7023f8c861c408061c902963414c1edbb2d88727515',
+    'sha256-ungz' => 'c18c05d9ad6f85143599b7552d78a187adf9995a4cda4e72a19d10b241c00f53',
+    'size' => 26255
+  },
+  'Data-Buffer-0.06.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'ebc73caf0a71e0f7567d8cf90e676bda',
+    'mtime' => '2024-10-15',
+    'sha256' => '8c9ec00db2d4530861cd8635d57e18a162fa0a91d69653f5ee8c4d77ee4bb7d5',
+    'size' => 1228
+  },
+  'Data-Buffer-0.06.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '500c8ee76e5d047652baa4f272e52cd6',
+    'md5-ungz' => '17323b7bd62e06954a1345fefc04a8b4',
+    'mtime' => '2024-10-15',
+    'sha256' => '815956260f846095f12e1682da6f6d6857a2512dcf394dbc569293102b8fe4ad',
+    'sha256-ungz' => 'cd98eab5d3f0f6cba89bcf7d09a4fad343e39638b7d236df67ccca17bdafe75e',
+    'size' => 16154
+  },
+  'Date-Holidays-CA-0.07.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'cd89c8453ab19a2fff2b8bccd4fced0b',
+    'mtime' => '2024-02-09',
+    'sha256' => 'a70937cc6460e01938dcd2f1f1c936fd363c52c4997a6947f0fd72ec4f9d7779',
+    'size' => 2203
+  },
+  'Date-Holidays-CA-0.07.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'a7afdd50c67d7299fa6fac3f7c574da8',
+    'md5-ungz' => 'b8fe7ef77be6db776858fe9a2e386a5e',
+    'mtime' => '2024-02-09',
+    'sha256' => 'f2fddc8e391f84b18236eba86d65a3b37ab6c9a884c700234d52343ce298a6d3',
+    'sha256-ungz' => '737c5964cde14028858002e171130c0a231d255db08689964342392d50333548',
+    'size' => 28369
+  },
+  'DateTime-Format-ISO8601-0.18-TRIAL.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '64c1ade147cc44eecbc0176258940fc4',
+    'md5-ungz' => '04071c7173347f7749fcc482a0610479',
+    'mtime' => '2026-03-11',
+    'sha256' => '346dbad3b35c286e7599fd043bca64ae980535b8a83fc7a735bcd009b13b8d3f',
+    'sha256-ungz' => '825b0c6b35a0b23e153eeade6b3bbf98f419be481a7030c072a7801f79496d1a',
+    'size' => 47099
+  },
+  'DateTime-Format-ISO8601-0.19.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'e3827a4145d033057a6bd3023d446c1b',
+    'mtime' => '2026-03-13',
+    'sha256' => '74ebfdc4c067f87acbfe677f1f8f9b7d420437d716a4b291614e1e0c00faca1a',
+    'size' => 38603
+  },
+  'DateTime-Format-ISO8601-0.19.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '999fb350ad5a3ffc7ea207305e89c040',
+    'md5-ungz' => '149bca520981280a5c2183d1797d91e6',
+    'mtime' => '2026-03-13',
+    'sha256' => '104fe5f79523cde5494ba7654b6b4357a2d8bb71f18ca6eb836e1475a70bcc1b',
+    'sha256-ungz' => '6f855ae8a1bd45ae325deef03cd0b0e8e1080161c4e0e3cca5e9df30cab3523b',
+    'size' => 47142
+  },
+  'DateTime-Format-XSD-0.4.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '25574f1a369cfc3575fd9a1c0d35af19',
+    'mtime' => '2021-04-18',
+    'sha256' => '08e0950bd38c2077bcd55e210e1a1102a52db38b251c29ce6f2404036a08f21f',
+    'size' => 2131
+  },
+  'DateTime-Format-XSD-0.4.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '34596d4e71812c61addb1e06045711b0',
+    'md5-ungz' => '0042b3b0b25f01e7accc486a09848d60',
+    'mtime' => '2021-04-18',
+    'sha256' => '97225bd42b90203c7b4980145e797e25624f312a72ae2f3c75692e6acdd99432',
+    'sha256-ungz' => '7d717aaffd822c7fda777ad135cab9e00c2cba1a3612de32ac846568e911ee4c',
+    'size' => 13452
+  },
+  'Dist-Zilla-Plugin-GitHub-CreateRelease-0.0007.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'b8cfa9b90f98d15936c781ff333ed12a',
+    'mtime' => '2024-01-22',
+    'sha256' => 'e568378a0478e1c191709d3ef1d88071023649b4ccb8bb3e51b07e44619dae17',
+    'size' => 2977
+  },
+  'Dist-Zilla-Plugin-GitHub-CreateRelease-0.0007.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '972ee0c5fe0d236a66b8e1890ac6df19',
+    'md5-ungz' => 'a971f9aca0ee0b0ceea223de5081a2f4',
+    'mtime' => '2024-01-22',
+    'sha256' => '2e412ac047c5bc8f62c9fed1b6c945909c1e39b0c4547beaf3fa7942df663539',
+    'sha256-ungz' => '67b06fb4e90e128c8ff83ef9a065a7baa52068beca36eec6fcb0817080caead0',
+    'size' => 24137
+  },
+  'Dist-Zilla-Plugin-GitHub-CreateRelease-0.0008.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '469f85f9cee029a957f3332c287cfd35',
+    'mtime' => '2026-04-25',
+    'sha256' => '5b0ce0ea838c03aaef7385e4271909c08a2d17ff4c3bb6d042e4b66caeb441ba',
+    'size' => 2870
+  },
+  'Dist-Zilla-Plugin-GitHub-CreateRelease-0.0008.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '824fa52e9307447f4996e766306a988e',
+    'md5-ungz' => '9cb07679995d1334adb1e5854b79fe07',
+    'mtime' => '2026-04-25',
+    'sha256' => '1f36488ee0a422119c573ce11bbf126c14c35faa3fc3f15a942923888317f6de',
+    'sha256-ungz' => '9624849191c609c045c059e617d25ee99a1845a620dddca70e19214188904004',
+    'size' => 21607
+  },
+  'Dist-Zilla-Plugin-GitHub-CreateRelease-0.0009.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '2b4ced69de2775ed1521ca08a24ddd2a',
+    'mtime' => '2026-05-28',
+    'sha256' => '2455f057307808668febc4d866ad89755d2456a499f1ecdd0c6ee4cf9084b7e2',
+    'size' => 2870
+  },
+  'Dist-Zilla-Plugin-GitHub-CreateRelease-0.0009.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '76d85082fea2dd52b9702790574442fa',
+    'md5-ungz' => 'd40183a92a3f3fdae45b007bd251760e',
+    'mtime' => '2026-05-28',
+    'sha256' => 'b13475bc0f284161f56ae983e82de93d15d941d55260c9006dfe27fc55d8fc45',
+    'sha256-ungz' => '4ffaf86e9b9d801e4ebc21ca73d53d50e85715c7450bf1e513c80e9879a9b748',
+    'size' => 23110
+  },
+  'Dist-Zilla-Plugin-GitHub-CreateRelease-0.0009.tar.gz.sigstore.json' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'a95c4836ef8f2450270b52f2634395c8',
+    'mtime' => '2026-05-28',
+    'sha256' => '9dc5c5a5383ba7559e30dad705a2b3ef6756c9dae9872c4cfd9444395b71c217',
+    'size' => 6571
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.01.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '65fe32245b26a661ce5b612f07d15d7f',
+    'mtime' => '2026-05-03',
+    'sha256' => '38e17f46573930394bcdd8394b72e342a956635dd7d320021b665feace03ba21',
+    'size' => 2605
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.01.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'f64f7d094a5f5e404ea9f3fb3893d4e3',
+    'md5-ungz' => 'dd3d39df78b57e7911423274a11d0696',
+    'mtime' => '2026-05-03',
+    'sha256' => '6d48d3395e4ce349a4326ef66a4a990104e6e21b739c455319ba1a3c19f4ea85',
+    'sha256-ungz' => '63c9a5a828e6f24dc6313530983f9bc863c96f918595109f98939c08b98b23ef',
+    'size' => 15284
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.01.tar.gz.sigstore.json' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '5f8d6606fb2573957586ba2d942e0f72',
+    'mtime' => '2026-05-03',
+    'sha256' => 'd2cdc4a963a9f02b33e93edbc02822c660a89b2add24ebce7229c453f8d6f5fa',
+    'size' => 6171
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.02.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '55a856d7c556a770cdc4d8220daf7f89',
+    'mtime' => '2026-05-04',
+    'sha256' => '5e12dae253e1945966f0ee066006c7aadfc29f29e26dd27e8a23de23137372b0',
+    'size' => 2443
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.02.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '112a730c21189c7496a2d1f6a048b591',
+    'md5-ungz' => '6b623c9f04a0e4c383f0a226213bf113',
+    'mtime' => '2026-05-04',
+    'sha256' => '9dd9b906407abc1999b1b9f87699ef84c9eea7a7209e1700fe38dafc668f3dc2',
+    'sha256-ungz' => 'e6b8b4ab81a6b1b940fbf41bb9781a26efd9737da6efd5a0df1a4efe641653d5',
+    'size' => 15706
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.02.tar.gz.sigstore.json' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '025f196355fc2f49b5c9af5b15c03c87',
+    'mtime' => '2026-05-04',
+    'sha256' => '8099c48e11e35d5ffed746f08a2f36b3a880e7db79e91c490482074db986e0be',
+    'size' => 6191
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.03.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '9f4c9c3f92c740d8d42afcb064629148',
+    'mtime' => '2026-05-07',
+    'sha256' => 'f6fbef77e25b121a0e0098f23cea1579e1ebdbdfa8222607dc76d684b15eda90',
+    'size' => 2421
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.03.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'e8ab2ecbf1d52e0463e4fef4d86adf2f',
+    'md5-ungz' => '15a709abee9cd53ddb3f6ba1e4969ae9',
+    'mtime' => '2026-05-07',
+    'sha256' => 'a86ce80bb58a262e97f5b10c4090bba0df26ddb3f09bbb6c650ff47ea671232c',
+    'sha256-ungz' => '770e23d54f8dbe060639163f9e58f3f22face671c733975bc41534e6f67e020d',
+    'size' => 15477
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.03.tar.gz.sigstore.json' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '79bc42ac90332c9a368cde8e5633f0e8',
+    'mtime' => '2026-05-07',
+    'sha256' => 'ae15bdfdb932bb193b521f561a4e6fd2604565990954633bf3edb6671d6238f7',
+    'size' => 6271
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.04.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '17f43bf37f71dd8c93eee537849f86d5',
+    'mtime' => '2026-05-07',
+    'sha256' => '1b3fb27b610f54f049977608f6caa48e04fc5da6dbdb5f68c050e24e024e4b37',
+    'size' => 2421
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.04.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '557580779f5df39a6356d94942ff070a',
+    'md5-ungz' => '3f4b077ff981b90266bc91fc22ee5a93',
+    'mtime' => '2026-05-07',
+    'sha256' => '9b8582e5ad8b56093bc1d6f59888333af3c3615f9dde989e5b56f6a1ad3b2627',
+    'sha256-ungz' => 'fd8106132b03c4d7ece7e5d96d01a387d8a2a0e9604f5bc78f2d03d86c9182cf',
+    'size' => 15544
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.04.tar.gz.sigstore.json' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '393de4060163a93d358ba7ea5cd9bc6e',
+    'mtime' => '2026-05-07',
+    'sha256' => '695a30663164b3a1a840636f6c2b2c23859988e3f847fa90c1f02f9a0c61090a',
+    'size' => 6075
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.05.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '7f726c75b0e62433d65bf9fc804b766d',
+    'mtime' => '2026-05-08',
+    'sha256' => 'd86cd0e70c7bba35e95b1f46aecef2683b50ae99a8cc714eb960a585f2791ea6',
+    'size' => 2421
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.05.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '38a3788e5eb00d9701c596bdd44f1217',
+    'md5-ungz' => 'b93a7a1cdee8c288c609fca961951fff',
+    'mtime' => '2026-05-08',
+    'sha256' => '5f714a5f3543788e207a09f063f72346460e91b27c685df8eb448d5d1c17a252',
+    'sha256-ungz' => 'c630c5ae4006caf688083cc6869faee9e583e10df073f9b141a74f501f9936a6',
+    'size' => 15595
+  },
+  'Dist-Zilla-Plugin-SigStore-SignRelease-0.05.tar.gz.sigstore.json' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '9614da263e02a778b3509e702b735d80',
+    'mtime' => '2026-05-08',
+    'sha256' => 'fb43cc2c3b3d991ef3002d00fc5b577c5ab81d97775af31efa90c6d016458685',
+    'size' => 6315
+  },
+  'Dist-Zilla-Plugin-SignReleaseNotes-0.0008.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '422612edfb7667391b055a9251bfce80',
+    'mtime' => '2022-02-19',
+    'sha256' => '7a70a3d9ce7b6c5affe8e41d30e3fbc8df4dc86326f28d303348cdff3647f850',
+    'size' => 2178
+  },
+  'Dist-Zilla-Plugin-SignReleaseNotes-0.0008.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'a9986a215c9b0e32559ba1121ecf39b6',
+    'md5-ungz' => 'b5ae34a18ec8c09505e524559676389e',
+    'mtime' => '2022-02-19',
+    'sha256' => '8060d7d5915088fa6b3438f0c9ac80070b6b4d2cbf3c0ee26ca7f4496f2be3b5',
+    'sha256-ungz' => '1c82a729fbf22e2eaa79fea26271d907cd4bb4c437f2a9fc82c51a587d1ccde4',
+    'size' => 16532
+  },
+  'Health-SHC-0.006.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '1cc0dd857332102798b8e843fcc84399',
+    'mtime' => '2024-10-21',
+    'sha256' => '068fccb61ad6c7ecd4b1a793afb058f37e8d918e6a6dd500b124de653ab5ed07',
+    'size' => 2078
+  },
+  'Health-SHC-0.006.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '8c91a42d3339cb86695bfde76b0f3f74',
+    'md5-ungz' => 'e429075cbcc74e6dd397d8787ba54793',
+    'mtime' => '2024-10-21',
+    'sha256' => 'de8d1f95a6b626c2643da3fb54f2d013d82b43458e4df0c09fa285f1c59c82ad',
+    'sha256-ungz' => '1b60bdfe98438dd0cae278ca2a5aad750c38819bfddd859834c17d9a4eb05bdc',
+    'size' => 57804
+  },
+  'IO-Compress-Brotli-0.019.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '844fcc8064e268706b70f0ab2f4fd7a5',
+    'mtime' => '2024-11-30',
+    'sha256' => '8be8a240492dfc8d487866ff253b8bd1e0ecd4fddd23b884f0f921f8d156e287',
+    'size' => 1165
+  },
+  'IO-Compress-Brotli-0.019.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'c60885c48fad4a3bdabd42450e397efe',
+    'md5-ungz' => '08c17722531e397045bc01d690b874cd',
+    'mtime' => '2024-11-30',
+    'sha256' => '37f40dd7cee44acea26f2f763a773e61d4ec223305ddeeca4612443cbf288fbf',
+    'sha256-ungz' => 'f532e7286692baef0b496cf9724833c0033214a83b06f6f5881b24e9c58e71d3',
+    'size' => 7814536
+  },
+  'IO-Compress-Brotli-0.020-TRIAL.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '6a023c5f7a10048eb34cd6c52e47acb0',
+    'md5-ungz' => '37b656312f1041dba3ca640211345263',
+    'mtime' => '2025-11-18',
+    'sha256' => '1bf98d5bc7eb78eadff5d07e90980b8ce27c31e0f78e7c779cfdddf3c3aaafa4',
+    'sha256-ungz' => '36d982e035dae879e6c1adf296d3fb68cbb9a725a22d51a971da206372fc5540',
+    'size' => 12426077
+  },
+  'IO-Compress-Brotli-0.021.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '3c6b864ef9b07f037f6398b72adeb874',
+    'mtime' => '2026-05-29',
+    'sha256' => '73e4efc1a01794e758339240611c9eddb42b170fbb717fcc8cd10e25a8dc438e',
+    'size' => 1163
+  },
+  'IO-Compress-Brotli-0.021.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '4d090980bc0463d4ff38a6cf4cb13afe',
+    'md5-ungz' => 'c6785dc908f68a11619326a7e6a94c0f',
+    'mtime' => '2026-05-29',
+    'sha256' => '5d49de4f3de7a20baccff0d0f69bfa58cc9788ff420ff93ad1986d65f82de2ba',
+    'sha256-ungz' => '2486fbd2cb9294d3b626dc49e244c2bb0312d027ed3d1828738c50e4048f1915',
+    'size' => 12426101
+  },
+  'IO-Compress-Brotli-0.021.tar.gz.sigstore.json' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'b603b2234cf9c1215094b5456cc0a4a1',
+    'mtime' => '2026-05-29',
+    'sha256' => '42c1a30af42fb616c75b0beec757f25dccd55163525ff13ef294c0a7a8454bbf',
+    'size' => 6715
+  },
+  'IO-Compress-Brotli-0.022.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '3da6fe29844413e280ea00cea002c091',
+    'mtime' => '2026-05-29',
+    'sha256' => '49b025973bb9df03cdf285b176a75bc91337ce668eaa261191eedfe7bc6ddf11',
+    'size' => 1163
+  },
+  'IO-Compress-Brotli-0.022.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'f7ee2bfa26e1128a038b875cd83d735f',
+    'md5-ungz' => '1348dc1eba44425f9afe1c76c9c43552',
+    'mtime' => '2026-05-29',
+    'sha256' => '364d2f4131548d6fac5f2df7750d0bd8ebfee10a7c28eb05e7b98ce6ac7facc1',
+    'sha256-ungz' => '6a8be4615054221e41f432a44daf8dba876f4132563e96572fa0e335ce5641e1',
+    'size' => 12427890
+  },
+  'IO-Compress-Brotli-0.022.tar.gz.sigstore.json' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'fb7569a8072f5834a942fa08b40742a3',
+    'mtime' => '2026-05-29',
+    'sha256' => '939c0a2ed839fe5d5e0420e4bad48557be02dc359c1c68769cf77cb0c664edf7',
+    'size' => 6763
+  },
+  'Module-Signature-0.91-TRIAL.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '6e70a8a509372f6d399eb6fae775a742',
+    'md5-ungz' => '3dae9f648fb82c81940e639436f27c66',
+    'mtime' => '2025-06-24',
+    'sha256' => 'd7d1bf2410d8eb15dcaffd14c50bfd03f1ae1e03eed93420b87ef403b3aa8df6',
+    'sha256-ungz' => '0aeb4a2a3cfa0c98241d2f2961d0508b6a5e720f0a908d831ab30d97438bf971',
+    'size' => 91946
+  },
+  'Module-Signature-0.92.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '27520280d08d73664c23a9ee6b15c0bb',
+    'mtime' => '2025-06-25',
+    'sha256' => '3c17c1340f40dec11f923899c8cf7e67e76530e9aa602c8b9a0fbe56d82b9fde',
+    'size' => 2714
+  },
+  'Module-Signature-0.92.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '1b2b1642d609d864e6d06aeaaf962706',
+    'md5-ungz' => '0d0ebb8a13a0d5535ebc98856efd78e5',
+    'mtime' => '2025-06-25',
+    'sha256' => '32ca3b414a30a6a330fb9f6acbf7b8fc440942a6bfdccb74e7262a7ec47d98bc',
+    'sha256-ungz' => '8138e0119bf982c8de401000cad46dcbfe0101b37ba4dfd7df69d300c174810c',
+    'size' => 91991
+  },
+  'Module-Signature-0.93.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '0dd8be3e0438020f3119da312b5455f3',
+    'mtime' => '2025-06-27',
+    'sha256' => '28db5703053cb3c31aaa16cbcc785e71f1b36e1147c22ef74945efecb37c91c2',
+    'size' => 2714
+  },
+  'Module-Signature-0.93.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '4ff16085d07556549d96905c006cc218',
+    'md5-ungz' => '8319d7f5edda0fb926a6d86a7fd5dac1',
+    'mtime' => '2025-06-27',
+    'sha256' => 'd0b128ec34152540f05187b8412808ed3661aa57e81c1cf959d06c35295b1f3a',
+    'sha256-ungz' => '64b435933809b31738b8bbc365cb69ae8c0c88155e446514900192d6c1d03c7b',
+    'size' => 92260
+  },
+  'Module-Signature-0.94.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '4407c15ef1bdc62bd96a1c7558437afd',
+    'mtime' => '2026-04-26',
+    'sha256' => 'c322c45cd02d05f5c2eca5917bf2c04b55f04b83ad3f2b9345b917432499f445',
+    'size' => 2782
+  },
+  'Module-Signature-0.94.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '44082a5d9e09812bc30fde451f3dac07',
+    'md5-ungz' => '4fd0d67013aaad170b1924dbdd6344de',
+    'mtime' => '2026-04-26',
+    'sha256' => 'b8b936ed8e7a3fc6fde8e9d2be18d8dc7809ff737a0a9cfd340101088aef1f44',
+    'sha256-ungz' => '635e21d3a7f5503d3f4547d26d22a204b5dddf9589e25a5669957a7915802781',
+    'size' => 89960
+  },
+  'Module-Signature-0.95.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'fa858cdb9fcb5210e5797154636b8683',
+    'mtime' => '2026-04-26',
+    'sha256' => 'd5be5fb2cdd5daf2bd6932e5f0eeee65021d9ccc2b60c92dd1edfd52c0a515d8',
+    'size' => 2782
+  },
+  'Module-Signature-0.95.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '730dffd19985ac09bc429b6c38c7ea9c',
+    'md5-ungz' => 'd706b535210e153c712b05c476a38c7b',
+    'mtime' => '2026-04-26',
+    'sha256' => 'e009d55a51632ca3ac70a709a004d085381bc53120c15326bbbca341e991b713',
+    'sha256-ungz' => 'ddc761939a7e51d674631acc244074c5db7e3c3c940d1ca46f43080ae7c9b03c',
+    'size' => 86330
+  },
+  'Module-Signature-0.96.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '63aac5b3fd89a7079b848a0e09b3bcbd',
+    'mtime' => '2026-04-27',
+    'sha256' => '4e5849c60dbbe321006b149943d7172e03f23673f322fc437d5c864c57077926',
+    'size' => 2722
+  },
+  'Module-Signature-0.96.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'ecf4d4c5744700463bdb80b85c9cdbab',
+    'md5-ungz' => '0555334bd1769134d8de818a26512a22',
+    'mtime' => '2026-04-27',
+    'sha256' => '461fe5f6a189e6dc85f8776f7534fdb9821ecb3e04d839268d31353f9b429d7e',
+    'sha256-ungz' => 'e46c00e75f18ce263eba3aec0e8e6968e86a55ec6ccabd28be4f14d65d42b541',
+    'size' => 88448
+  },
+  'Net-SAML2-0.81.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '4bd79cc70fb9ee3ba571adc795314fac',
+    'mtime' => '2024-08-30',
+    'sha256' => '1fac445e9b20b379983b577e011602696836e1b9c28199e590ec4cf51f1a4240',
+    'size' => 6908
+  },
+  'Net-SAML2-0.81.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '032192318adb36f0998b95861fc0333a',
+    'md5-ungz' => '2276d68de788a3526aeb0734f8f30575',
+    'mtime' => '2024-08-30',
+    'sha256' => '32ae1479220ea253fb0303eb7c1860060d8538596f8b083046806d8d767a49d9',
+    'sha256-ungz' => '123032d7aec08b450712ec22937d5c130023c4296251760e6197bdbdf0ad73c9',
+    'size' => 197030
+  },
+  'Net-SAML2-0.82.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'cb33524c928616ab91a33b2595afece9',
+    'mtime' => '2025-05-27',
+    'sha256' => 'dcaa2f4e56d360bc317abeb4aea8eed76652b16dc5a0a0356c7bd39c89fb46bd',
+    'size' => 7034
+  },
+  'Net-SAML2-0.82.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '4a3baf3dd430c1d6173790a1454c5a7e',
+    'md5-ungz' => 'd9d7e0d123efc8ec5622673081fe335a',
+    'mtime' => '2025-05-27',
+    'sha256' => 'a9b5dc37fbf7a2a1e15b26b1f7d0856746140c066a66b7ca8b8b9cbf65492048',
+    'sha256-ungz' => '02d581b5bd5ac8bbfd3cf88408cd2cc4ccff9fc9c794d5b1bccfa5d269f2e435',
+    'size' => 197908
+  },
+  'Net-SAML2-0.83.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'a24b97426cd77afb38e1bf0cf680326b',
+    'mtime' => '2025-11-08',
+    'sha256' => '21eec5f92baf02225927ef94692665dc28a05d26cee1b573ea0ded757f94650b',
+    'size' => 6985
+  },
+  'Net-SAML2-0.83.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'c10dd470a26ae84eb5eefaff0e9857d5',
+    'md5-ungz' => '62942e8f543864cce70dbedf641171fb',
+    'mtime' => '2025-11-08',
+    'sha256' => 'ac97c15a9318eb186c1501a8aeb590136249519a7126dfc5a946664898d5184d',
+    'sha256-ungz' => 'ae1cca6ed9c9900fd96f3795673b3f2340d2f9cec61be6391d9ee11e1a9fd1e2',
+    'size' => 197994
+  },
+  'Net-SAML2-0.84.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'c1f1aa9f32bb3ea8ae26c18a48488b40',
+    'mtime' => '2026-01-12',
+    'sha256' => '67467bdbaa9fe86053d0a3366f699c6c0f7868de9e1a2be6e12f9168233d4814',
+    'size' => 7065
+  },
+  'Net-SAML2-0.84.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '107dc412848d6c1eab5159a79bd73cbc',
+    'md5-ungz' => '1d2f6102b7ce339f94e4a8a85db710b3',
+    'mtime' => '2026-01-12',
+    'sha256' => 'a2c9a26eed8818191355566115d524bd89a08bff7b340160ef8e7f5d7455662b',
+    'sha256-ungz' => '35f9ca0adc7d12bc2e2f2256dfa1293c5e484da3d2918012ac323320a2b24896',
+    'size' => 198584
+  },
+  'Net-SAML2-0.85.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'a5fb56f2a8ea7cf9ab7c4de582cb162e',
+    'mtime' => '2026-02-09',
+    'sha256' => '936282c05d17f5459443863ac67c6d6e1ea0bf95d6df8ee61e27ca0b66bf1312',
+    'size' => 7119
+  },
+  'Net-SAML2-0.85.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '8d415f84b6b6ee376dfadc385cebdfe2',
+    'md5-ungz' => 'cb0093a963964144e27e0db11355b973',
+    'mtime' => '2026-02-09',
+    'sha256' => '23a7ae1978a5ca88dc828d56cdfce2dee0c3f5d2f446f37a296a2d9b77e97117',
+    'sha256-ungz' => '8bc20e73c13a264e373806d9b336cf63bcad0c8c2d19a7b89caf329396999f50',
+    'size' => 198794
+  },
+  'Software-Security-Policy-0.09.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'b366b904bfd16f3aca428da9a517c39b',
+    'mtime' => '2025-02-05',
+    'sha256' => '59d4d6b4087e81391793bd40dfc974f9fc31b387bb5e8a56047dceddd7c1d5f9',
+    'size' => 2119
+  },
+  'Software-Security-Policy-0.09.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'f7b31e41b7d150d4d3815c777a2169e2',
+    'md5-ungz' => '229f84f295f878df5559fa87f3f11571',
+    'mtime' => '2025-02-05',
+    'sha256' => '8ecde4dd33d22ee7877caaa1ab9e25f3505fa313f430d5e82232f96175469ce3',
+    'sha256-ungz' => '9e37fab394fa2f5faf0fb82ff49dc3ad05365d0784674ed573ade3b26fb14dcc',
+    'size' => 19981
+  },
+  'Software-Security-Policy-0.10.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'dd499029d1e2d8e089fb7640c2f3eca1',
+    'mtime' => '2025-05-02',
+    'sha256' => '984fd609339f85584277dacfcd2ee26ea065d94867e99043bc83b1e151ce8853',
+    'size' => 2119
+  },
+  'Software-Security-Policy-0.10.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'bdcc7e2b28b3cf275e509544565b1a21',
+    'md5-ungz' => '14873eff06574a6fd0c084d7858d74a2',
+    'mtime' => '2025-05-02',
+    'sha256' => '4e94574720e4be1ee85df37f8bd205ee71a922ec8775e7e42724b7fc1623ef0f',
+    'sha256-ungz' => '54eb843e4134a41d0ca2d31d5dcc95318fb6d8268e4e5f0a6f7d13dda69264ff',
+    'size' => 20385
+  },
+  'Software-Security-Policy-0.11.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'a56bfc611d66fb98baa6872c58effda2',
+    'mtime' => '2025-05-10',
+    'sha256' => 'ea25bfc9809240a1fb09a7cafc1aac0a0758fbf46d89e6edf441dc77cdcb7bf3',
+    'size' => 2119
+  },
+  'Software-Security-Policy-0.11.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '36ad54fc42162e3d78b408263f00d177',
+    'md5-ungz' => '313e5e244e155f149e0a70c31c3448fc',
+    'mtime' => '2025-05-10',
+    'sha256' => 'f2f46901c05f0f8500e8f6024ce357e317b10094609166bca976c9a541fa7370',
+    'sha256-ungz' => 'dcb3e79324fffdf7885ca767b3c8cdcab8fc2420183ef2498eba52183cb34683',
+    'size' => 20769
+  },
+  'Thrift-XS-1.05-TRIAL.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '3676efa6f88e6ede1d54ac58f5e36e1a',
+    'md5-ungz' => 'dc9f56733ad91e19725968ebb2181652',
+    'mtime' => '2026-01-28',
+    'sha256' => '8a7e8b50e677cf4568feb3e5215c65e9492d73a8ce1b66a2b542f305227299d4',
+    'sha256-ungz' => '6ab05fefc0c37cdfad1e7f6475473634a0cf5bcd57e974ac7238c0055f71e6f7',
+    'size' => 83477
+  },
+  'Thrift-XS-1.06.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '362d6166d0020be506c907db9782830c',
+    'mtime' => '2026-01-28',
+    'sha256' => '6b4721435d6e30e6561f136b20c94edeb9e7faf620f11c4d1da864c7a83b534b',
+    'size' => 1193
+  },
+  'Thrift-XS-1.06.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '62b0fc0a2c59e5f4ecd92028aa4fe66c',
+    'md5-ungz' => '0894d7f1e1f2f2fd45d9da2ef40220ef',
+    'mtime' => '2026-01-28',
+    'sha256' => '7c77da3120898452ce3f775995d19b21ca98bfbe303ab1facca30d3e7cd03fde',
+    'sha256-ungz' => 'eb87fbc37feb5f7c4afeed0365eb63b5492977cc48fe28e427cc8f8eeb17b989',
+    'size' => 83538
+  },
+  'Thrift-XS-1.07-TRIAL.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'c7ea93b20d866fb0cfe32512111f247e',
+    'md5-ungz' => '08936a87e9795a61fc06bde3be6cad33',
+    'mtime' => '2026-02-15',
+    'sha256' => 'fcf600b29d28506afc8a37b1e879ec55d9fc2d438c373ccfc04f5a20b080484e',
+    'sha256-ungz' => 'b0e24e7675c6ae6e67990419f850d3d8924701949cd25795164458980cd9d790',
+    'size' => 83694
+  },
+  'Thrift-XS-1.08.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '87feab9722a2646c2a98057da033264e',
+    'mtime' => '2026-02-16',
+    'sha256' => '520fbaed76e2dbb23ec8f2e8486d0dfda8394974406e6826edb35d3b1d52b890',
+    'size' => 1193
+  },
+  'Thrift-XS-1.08.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '2124425f454a51b62d2d3608912d3b10',
+    'md5-ungz' => '54f4d091f4f39fd2cb052bb726f82d90',
+    'mtime' => '2026-02-16',
+    'sha256' => 'da6649ad3d2da3c89c860c4a2397be67f0b8dd0eff95cd0bcd485124c41dfbaf',
+    'sha256-ungz' => '662d1eab2b821d96f7f23dc0416e70cf6746a8f51b458ce31a14a47e108ff941',
+    'size' => 83749
+  },
+  'Thrift-XS-1.09-TRIAL.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '1009a0bc1ffbc312a5fcf03bdd740807',
+    'md5-ungz' => 'cac0c8741ce6e2d8ee7e64a08bf724bc',
+    'mtime' => '2026-03-12',
+    'sha256' => '8964330f73892984300cc5c2872f66d67f47d1025f75f208f6960ef452872558',
+    'sha256-ungz' => '2d5147de417c8f2614564f3b43570bb750e367b73c0485507126847eb08885f6',
+    'size' => 74237
+  },
+  'Thrift-XS-1.10.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'e5b9763593fa266e62dac8414666fc38',
+    'mtime' => '2026-03-14',
+    'sha256' => '6e64c84d637f72678792cc2a502a1f2a439accf55407f11661532bc2597a6606',
+    'size' => 2071
+  },
+  'Thrift-XS-1.10.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'f5a065013c6f120e142c3abc59f81aa9',
+    'md5-ungz' => 'bd7a19ca52c6aa7029ca249ac36aab66',
+    'mtime' => '2026-03-14',
+    'sha256' => 'cf88773fcdcd4ed53f2ec93c4d27736affd49b044495d0eb421fd9a2d7ac64cc',
+    'sha256-ungz' => '581c0c42be6d7153c59427b257398bd0ddc8c476b85ca3d0925d00f37dc737bb',
+    'size' => 83167
+  },
+  'Thrift-XS-1.11.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '0047b4eccc3d4c00b197357aa59d9b3b',
+    'mtime' => '2026-03-28',
+    'sha256' => 'c059680e0302fb73d42929aea500609a9a9b3769063480ed06469eff5fadd8ca',
+    'size' => 2071
+  },
+  'Thrift-XS-1.11.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'c91f5e550c37ad726f456db8b1d3fb76',
+    'md5-ungz' => '0c1d31a29f699d15eae4e12d8bd0121f',
+    'mtime' => '2026-03-28',
+    'sha256' => '29e9c2de1fc6d56724ea28f445d075e4509bb428e14f26273fbbb1efde281679',
+    'sha256-ungz' => 'aeb5a6254b6f893cd69b5eb95ce2c83253c470726ef8b51f9c2dd45116983537',
+    'size' => 83205
+  },
+  'XML-Enc-0.15.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'f9a1b2392a8b004957bc1472bbf8ac6e',
+    'mtime' => '2024-12-28',
+    'sha256' => '4d3d3c8396d576acb69a3b88d8de6b237f385d79b8850499cd08c9aafdfa5354',
+    'size' => 2490
+  },
+  'XML-Enc-0.15.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '02ed01de3fac39faa37f92b055f928cb',
+    'md5-ungz' => 'd78316a56e4113792d72e1cf1647eb6f',
+    'mtime' => '2024-12-28',
+    'sha256' => 'dce3d82eea805a8c9fc00462760bcdeb94760616d18b3930875ef1d007b2c2d6',
+    'sha256-ungz' => '366d69571a36b854fe7af32e1ded092f361131d72ca70a8f500eaf9baa067d2d',
+    'size' => 108556
+  },
+  'XML-Enc-0.16.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '379c17a831b50dc8bc14356154331cae',
+    'mtime' => '2026-04-17',
+    'sha256' => '6e9f19203b1a81b1de28c6b9348267b48ac1a14bd97dba58fed248742ef6805c',
+    'size' => 2552
+  },
+  'XML-Enc-0.16.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'ac95c283ec0afc8a8efe8ccb1b580254',
+    'md5-ungz' => 'c161d147f20092ab36837ab12cec11a3',
+    'mtime' => '2026-04-17',
+    'sha256' => 'c2e186a5fd35624f02f102f160b5443edc44e052627f5b12e6c5ae292e19bd24',
+    'sha256-ungz' => 'a200035d282abcd20a07ff4e11787e04ff40f38195850974710a687624974592',
+    'size' => 110358
+  },
+  'XML-Generator-1.13.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'efb8606fefb1b06c6571610611f29879',
+    'mtime' => '2023-04-30',
+    'sha256' => 'b78bbc2d0a2f0ee2083dae9521d4890daec51aef0444d8103f644c06890a8255',
+    'size' => 2862
+  },
+  'XML-Generator-1.13.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '1ad1050f0003df591613a38f705f3fba',
+    'md5-ungz' => 'a20b218878867a5d9a32d7c4ff491b82',
+    'mtime' => '2023-04-30',
+    'sha256' => '30ef32fac30f268a3d9062c44fd5ab7518499bf993b50ef8ee372d8787bcb9a8',
+    'sha256-ungz' => '87cf2b31715bc60326846fde388379ec9829dfe20069d45778236d648869f2e9',
+    'size' => 45541
+  },
+  'XML-Sig-0.65.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '9e549bdfc1e1ee8cf8e67d671bfd2721',
+    'mtime' => '2023-11-21',
+    'sha256' => '44c095b9ae8209901a9d0e45b1b6f29f094daed968754643e02d6e46d14baab4',
+    'size' => 3246
+  },
+  'XML-Sig-0.65.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'ee06a21ea0f0c8bbd495fe04d6881bb6',
+    'md5-ungz' => 'feb51359541d8347985db36502988bb8',
+    'mtime' => '2023-11-21',
+    'sha256' => '16134674214dcd8c5630a1de69793aa38a32c15f88ada38a659b620ad264c62b',
+    'sha256-ungz' => 'c68f123d79e351865d314878e251430f1f1090b81ae0ab6a95418438e442a8c9',
+    'size' => 88203
+  },
+  'XML-Sig-0.66.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'a4d8bb2d9a49b5db2c0cafb9812fcfff',
+    'mtime' => '2025-05-09',
+    'sha256' => '342e8b282086ead9143b09c0825410a18f39ab08c6becc9e6fe3258f3ed257cb',
+    'size' => 3269
+  },
+  'XML-Sig-0.66.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'bb540107643504ffaa206f0304aebb44',
+    'md5-ungz' => '2296eab9ae52a6bf3bc1b26a0ea35dc6',
+    'mtime' => '2025-05-09',
+    'sha256' => '18056c6c8bd0f463404db660acba26656841343da159de50245eac0cd8055de7',
+    'sha256-ungz' => 'e80e0288d631841a15f4197138cd5bd85bf60ed75a550c5f5a291784ad490ed1',
+    'size' => 90112
+  },
+  'XML-Sig-0.67.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'e1b42ddede3002fb234a11a64ee47c7c',
+    'mtime' => '2025-11-07',
+    'sha256' => 'd34b2690c06c38aaf0f21f91220ae1d5cab502e7f23168af10b1610049c906db',
+    'size' => 3264
+  },
+  'XML-Sig-0.67.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '80e14d061e9288512b973afc9390b251',
+    'md5-ungz' => 'c59da7039c32b2b589a08877b1c88009',
+    'mtime' => '2025-11-07',
+    'sha256' => '0a9ae15fcaf242a5b1c34f49691b146ca21dddfb4556df983e195d4820daaf2e',
+    'sha256-ungz' => '62c80c81128cf607d92de75fd35092517ed6ba3d3249d42b7031f36e6c96ffc0',
+    'size' => 90094
+  },
+  'XML-Sig-0.68.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'cd8fd65866c47feee5bd6cd68b5b3a3e',
+    'mtime' => '2025-11-26',
+    'sha256' => '08c94cfbbc38cf0a33a6afb65710861738a6b466d1463bc76a4d153a8a041866',
+    'size' => 3264
+  },
+  'XML-Sig-0.68.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '10aa9268708bdb145662044e0ed2f0a3',
+    'md5-ungz' => '65dd34613d4666e0c79abcccbbf96a59',
+    'mtime' => '2025-11-26',
+    'sha256' => '064dfdd2f435d1f0fa6dd5b4824bcbc84a80169afdd01d7f91edc9559a4c39b8',
+    'sha256-ungz' => '42bf88ec02a50ca36c977e289a63ccc85b13205ae463ff28a802d1be341230d9',
+    'size' => 91183
+  },
+  'XML-Sig-0.69.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => 'a1615ac077b5f8191b9b4b1826cf1377',
+    'mtime' => '2026-01-11',
+    'sha256' => '1639045a6640728ec839b0bf58541e117970861215ed286ea787f9c4cde7f1f9',
+    'size' => 3301
+  },
+  'XML-Sig-0.69.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '52bf1175bbf8d890d70bc455db5031e5',
+    'md5-ungz' => '492eedf34e9a402841f0bec4b5c21cd0',
+    'mtime' => '2026-01-11',
+    'sha256' => '39981661504ec5c54144d2cc906618f8a799a86f09f3e61b392b405027a26199',
+    'sha256-ungz' => '4b7a101a2b62ccda3810e306d0863622721322fdca5a5f2530bf841d8ec5d5af',
+    'size' => 91879
+  },
+  'XML-Sig-0.70.meta' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '588cfbdb1d3b72466388f0d15a38c089',
+    'mtime' => '2026-04-12',
+    'sha256' => '9ff7c4a9f481d56ab2fa4eb6036d1f2454151b31f6a073ed48ac71cd5cd83548',
+    'size' => 3332
+  },
+  'XML-Sig-0.70.tar.gz' => {
+    'cpan_path' => 'T/TI/TIMLEGGE',
+    'md5' => '783e6768e129246bbbe69a101e80cfcf',
+    'md5-ungz' => '7e26c2702877c3156a887d89e2fb370e',
+    'mtime' => '2026-04-12',
+    'sha256' => '6d18e71483bd582544e1dc6c0052cc713b1f997d6a6432849bb7847f0b0fc6b9',
+    'sha256-ungz' => 'cd2baeb4c24e642b8914bdfed6a9fd693231c1f382c415c124512d58df0594be',
+    'size' => 93617
+  }
+};
+__END__
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEBxtGhQeBIGeRK5USWP2jy7dZ5cQFAmoZ7vIACgkQWP2jy7dZ
+5cRuahAAtEdbXchQmf74L00kcowQlS1gj6DujlEwitFKi7h0Pc/64+mAa2Y4KCAO
+b2VTXRj+HPR5zqcx8ljc1QdAdDJCXEhtml3gxEHFYWdG8EloxX8T8VrHiRN/J9h0
+JLGgHZGYHELEnQPnaKxgO92rwZMjIYAxtmY//kG1i4rsrzi71sr/QFsYwWj0psPT
+czCuVxInxYJyVIkOzEkay7KiFWNBDymjjwcka7ftMpOhC7hRH06yo0qhdH1SYuJp
+sbix3nndO5yYzyOFcBiLLep6Urtqup5gsJc0kl8n+ocoDt+CUll2+gcjiSCU3bcb
+y1zxO3ZOPm24MHBAOSZva5krT6lhCbTbil443m2TJyrdFBMX/BkQmySMpYsuYOOY
+1OpxKe5ZgrTPm9cd+Lc1fsbvPd/Ps2hOnhIzY1z3t8R04EzZzweE/1pMuqDOevQV
+QAcevIGLFV3f1av8XDPTvh5iekFasItkIwh5t2FKZDUgtnE/grQcaPzX8qHhPXhQ
+yYWKkH9MpgT8nGtZBATtuKpLdTzAmW+DlOFU/Tgw5ejp60XbKhnHKTmUkWqMYUzT
+kFadrJRYqoiTbIxq0QC/pAVLxw7LYxcwh20uiXnLVp4d1kTAudCIKQ2drKapWG8J
+SWm7Kw2zQ67PGIIyqegQU20lSt52BLN+ZjUgMVpoQ9IpphoRlTo=
+=zuP4
+-----END PGP SIGNATURE-----

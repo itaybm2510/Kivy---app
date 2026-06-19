@@ -1,0 +1,30 @@
+use alienfile;
+
+probe sub { 'share' };
+
+share {
+
+  start_url 'https://github.com/PerlAlien/dontpanic.git';
+
+  download [
+    [ "git clone --bare %{.meta.start_url}" ]
+  ];
+
+  extract [
+    [ "git clone %{.install.download}" ]
+  ];
+
+  plugin 'Build::Autoconf';
+
+  plugin 'Gather::IsolateDynamic';
+
+  build [
+    'git checkout 1.00',
+    'bash autogen.sh',
+    '%{configure} --enable-static --enable-shared',
+    '%{make}',
+    '%{make} install',
+  ];
+
+
+};

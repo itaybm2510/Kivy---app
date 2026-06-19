@@ -1,0 +1,47 @@
+name: Build Kivy APK with Buildozer
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Get Architecture info
+      run: |
+        lscpu
+        uname -a
+
+    - name: Set up JDK 17
+      uses: actions/actions-java-format@v1
+      with:
+        java-version: '17'
+
+    - name: Install System Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y python3-pip build-essential git python3-dev ffmpeg libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev zlib1g-dev libgstreamer1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav libffi-dev libssl-dev autoconf automake libtool pkg-config
+
+    - name: Install Buildozer and Cython
+      run: |
+        pip3 install --user --upgrade buildozer cython virtualenv
+
+    - name: Add Buildozer to PATH
+      run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+    - name: Build with Buildozer
+      run: |
+        buildozer android debug
+
+    - name: Upload APK Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: package
+        path: bin/*.apk
+

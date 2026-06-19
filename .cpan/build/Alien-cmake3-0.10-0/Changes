@@ -1,0 +1,35 @@
+Revision history for Alien-cmake3
+
+0.10      2025-08-21 03:59:22 -0600
+  - Update URL now that 3.x is not on the main download page (gh#23, gh#24)
+
+0.09      2025-04-02 12:54:07 -0600
+  - Only use CMake 3.x, not 4.x (gh#20, gh#21)
+
+0.08      2021-07-16 12:05:39 -0600
+  - Documentation improvements (gh#3, gh#15)
+
+0.07      2021-07-16 11:36:32 -0600
+  - Update Windows zip and Linux tarball filename patterns (gh#13, gh#14)
+
+0.06      2021-05-29 09:35:56 -0600
+  - Fixed macOS download link which is of course broken with
+    the old-is-new again universal binaries.
+  - Added aarch64 links for ARM 64 Linux
+  - Move to PerlAlien org
+
+0.05      2019-11-14 09:39:19 -0500
+  - Use binary version for darwin / OS X for share install
+
+0.04      2017-10-05 11:45:14 -0400
+  - use bootstral_ssl option on windows
+    cmake3 may be a prereq for Alien::LibreSSL
+
+0.03      2017-08-15 10:33:06 -0400
+  - Improve documentation
+
+0.02      2017-08-09 15:02:12 -0400
+  - Fix copy for windows
+
+0.01_01   2017-08-09 12:56:10 -0400
+  - initial version

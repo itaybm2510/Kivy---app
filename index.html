@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Quantum Casino</title>
+    <style>
+        :root {
+            --bg-gradient: radial-gradient(circle at 50% 50%, #0d1527 0%, #050811 100%);
+            --panel-glass: rgba(22, 34, 57, 0.65);
+            --border-glass: rgba(255, 255, 255, 0.07);
+            --ibm-cyan: #00f2fe;
+            --ibm-blue: #0f62fe;
+            --gold: #d4af37;
+            --gold-glow: rgba(212, 175, 55, 0.3);
+            --card-w: 90px;
+            --card-h: 135px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        
+        body { 
+            background: var(--bg-gradient); 
+            color: #f1f5f9; 
+            min-height: 100vh; 
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Header */
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            background: var(--panel-glass); backdrop-filter: blur(14px);
+            padding: 16px 28px; border-radius: 16px;
+            border: 1px solid var(--border-glass);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 25px;
+        }
+        .brand { font-size: 26px; font-weight: 900; letter-spacing: 2px; background: linear-gradient(to right, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .brand span { color: var(--ibm-blue); -webkit-text-fill-color: initial; text-shadow: 0 0 15px rgba(15,98,254,0.6); }
+        
+        .status-pill { display: flex; align-items: center; gap: 15px; }
+        .balance-card { background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(0,242,254,0.2); padding: 8px 18px; border-radius: 12px; font-weight: 700; font-size: 16px; color: var(--ibm-cyan); }
+
+        /* Navigation Views */
+        .view-frame { display: none; animation: viewTransition 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+        .view-frame.active { display: block; }
+
+        /* Premium Form Layouts */
+        .portal-box { max-width: 420px; margin: 40px auto; background: var(--panel-glass); backdrop-filter: blur(16px); padding: 35px; border-radius: 24px; border: 1px solid var(--border-glass); box-shadow: 0 20px 50px rgba(0,0,0,0.6); }
+        .portal-box h2 { font-size: 24px; font-weight: 800; margin-bottom: 25px; text-align: center; letter-spacing: 1px; }
+        
+        .form-row { margin-bottom: 20px; }
+        .form-row label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #94a3b8; margin-bottom: 6px; }
+        
+        input, select { width: 100%; padding: 12px 16px; background: rgba(10, 15, 30, 0.7); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 10px; font-size: 15px; transition: border 0.2s; }
+        input:focus { border-color: var(--ibm-cyan); outline: none; box-shadow: 0 0 10px rgba(0,242,254,0.15); }
+
+        /* Luxury Interactive Buttons */
+        .action-trigger { background: linear-gradient(135deg, var(--ibm-blue), #0043ce); color: white; border: none; padding: 14px 28px; border-radius: 12px; font-weight: 700; cursor: pointer; transition: all 0.3s ease; font-size: 15px; letter-spacing: 0.5px; box-shadow: 0 4px 15px rgba(15,98,254,0.4); }
+        .action-trigger:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(15,98,254,0.6); }
+        .action-trigger.secondary { background: rgba(51, 65, 85, 0.5); border: 1px solid rgba(255,255,255,0.1); box-shadow: none; }
+        .action-trigger.secondary:hover { background: rgba(51, 65, 85, 0.8); }
+
+        /* Admin Dashboard Override */
+        .admin-dashboard { background: linear-gradient(135deg, #1e1b4b, #311042); border: 1px solid #581c87; padding: 20px; border-radius: 16px; margin-bottom: 25px; display: none; }
+
+        /* Modular Lobby Arena */
+        .arena-headline { text-align: center; margin: 30px 0; font-size: 28px; font-weight: 800; letter-spacing: 1px; }
+        .lobby-showcase { max-width: 550px; margin: 0 auto; }
+        .interactive-card { background: var(--panel-glass); border: 1px solid var(--border-glass); border-radius: 24px; padding: 35px; text-align: center; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 15px 35px rgba(0,0,0,0.4); }
+        .interactive-card:hover { border-color: var(--ibm-cyan); transform: scale(1.02); box-shadow: 0 20px 45px rgba(0,242,254,0.15); }
+
+        /* Professional Casino Table Simulation */
+        .casino-felt { 
+            background: radial-gradient(circle at 50% 40%, #0a362d 0%, #041410 100%); 
+            border-radius: 40px; padding: 40px 20px; position: relative; 
+            border: 10px solid #1e293b; box-shadow: inset 0 0 120px rgba(0,0,0,0.95), 0 25px 60px rgba(0,0,0,0.7); 
+            max-width: 650px; margin: 0 auto;
+        }
+        
+        .dealer-deck-shoe { position: absolute; top: 25px; right: 30px; width: 75px; height: 110px; background: linear-gradient(135deg, #334155, #0f172a); border: 2px solid var(--gold); border-radius: 8px; box-shadow: -8px 8px 20px rgba(0,0,0,0.6); transform: rotate(-5deg); }
+        .dealer-deck-shoe::after { content: ''; position: absolute; bottom: 8px; left: 0; width: 100%; height: 4px; background: var(--gold); opacity: 0.6; }
+
+        .meta-label { text-align: center; font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: rgba(255,255,255,0.35); font-weight: 700; }
+        .score-badge { background: rgba(0,0,0,0.7); padding: 3px 10px; border-radius: 8px; margin-left: 6px; font-weight: 800; color: var(--ibm-cyan); border: 1px solid rgba(255,255,255,0.05); }
+        
+        /* Cinematic 3D Physics Engine Cards */
+        .card-horizon { display: flex; justify-content: center; gap: 18px; min-height: var(--card-h); margin: 25px 0; perspective: 1000px; }
+        
+        .card-object {
+            width: var(--card-w); height: var(--card-h);
+            position: relative; transform-style: preserve-3d;
+            animation: dealingPhysics 0.55s cubic-bezier(0.175, 0.885, 0.32, 1.1) forwards;
+            opacity: 0;
+        }
+
+        .card-plane {
+            position: absolute; width: 100%; height: 100%;
+            backface-visibility: hidden; border-radius: 12px; padding: 12px;
+            display: flex; flex-direction: column; justify-content: space-between;
+            font-weight: 800; font-size: 22px; box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .card-plane.front-side { background: #ffffff; color: #0f172a; border: 1px solid #e2e8f0; }
+        .card-plane.front-side.red-suit { color: #ef4444; }
+        .card-plane.front-side .suit-vector { font-size: 38px; align-self: center; margin-bottom: 8px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
+        .card-plane.front-side .mirror-rank { transform: rotate(180deg); text-align: left; }
+
+        .card-plane.back-side {
+            background: linear-gradient(135deg, #0b1527 0%, #0f62fe 100%);
+            border: 3px solid #ffffff; box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+            position: relative;
+        }
+        .card-plane.back-side::before {
+            content: ''; position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px;
+            border: 1px dashed var(--gold); border-radius: 8px;
+            background-image: radial-gradient(rgba(212,175,55,0.4) 1.5px, transparent 0); background-size: 10px 10px;
+        }
+        
+        .card-object.flipped-state { transform: rotateY(180deg); }
+
+        @keyframes dealingPhysics {
+            0% { opacity: 0; transform: translate(180px, -180px) rotate(35deg) scale(0.4) rotateY(0deg); }
+            100% { opacity: 1; transform: translate(0, 0) rotate(0deg) scale(1); }
+        }
+        @keyframes viewTransition { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+        .toast-status { text-align: center; color: var(--gold); font-size: 22px; font-weight: 700; margin: 25px 0; min-height: 32px; text-shadow: 0 0 15px var(--gold-glow); }
+        .console-controls { display: flex; gap: 15px; justify-content: center; max-width: 650px; margin: 25px auto 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">IBM <span>EVOLUTION</span></div>
+        <div class="status-pill">
+            <span id="user-display" style="font-size:14px; color:#cbd5e1; font-weight: 600;">Connecting...</span>
+            <div class="balance-card">BALANCE: $<span id="balance-value">0</span></div>
+            <button class="action-trigger secondary" id="nav-lobby-trigger" style="padding: 6px 14px; display:none; width:auto; font-size:13px;" onclick="switchViewport('lobby')">Lobby Center</button>
+            <button class="action-trigger secondary" style="padding: 6px 14px; width:auto; font-size:13px;" onclick="terminateSession()">Exit</button>
+        </div>
+    </header>
+
+    <div class="admin-dashboard" id="admin-terminal">
+        <h4 style="color:var(--gold); margin-bottom:10px; font-weight: 800; font-size: 16px;">⚡ CORE LIQUIDITY INJECTION SYSTEM</h4>
+        <div style="display:flex; gap:12px; flex-wrap: wrap;">
+            <select id="admin-user-list" style="width:180px;"></select>
+            <input type="number" id="admin-amount-input" value="5000" style="width:140px;">
+            <button class="action-trigger" style="width:auto; background:var(--gold); color:black; box-shadow: none;" onclick="executeAdminLiquidity()">Confirm Injection</button>
+        </div>
+    </div>
+
+    <div id="viewport-auth" class="view-frame active">
+        <div class="portal-box">
+            <h2 id="auth-header" style="color: var(--ibm-blue);">System Gateway</h2>
+            <div class="form-row">
+                <label>Account Identity</label>
+                <input type="text" id="input-account-user" placeholder="Enter alphanumeric code...">
+            </div>
+            <div class="form-row">
+                <label>Access Key</label>
+                <input type="password" id="input-account-pass" placeholder="Enter secure key...">
+            </div>
+            <button class="action-trigger" onclick="runGatewayLogin()" style="margin-bottom:12px; width:100%;">Authorize Session</button>
+            <button class="action-trigger secondary" onclick="runGatewayRegister()" style="width:100%;">Create Core Registry</button>
+        </div>
+    </div>
+
+    <div id="viewport-lobby" class="view-frame">
+        <div class="lobby-showcase">
+            <div class="interactive-card" onclick="switchViewport('blackjack')">
+                <h3 style="color:var(--ibm-cyan); font-size:26px; margin-bottom:12px; font-weight: 800;">Quantum Blackjack VIP</h3>
+                <p style="color:#94a3b8; font-size:14px; line-height: 1.5;">High-fidelity 3D structural graphics deployment. Real-time balance sync with administrative overrides.</p>
+                <button class="action-trigger" style="margin-top:25px; width:100%;">Initialize Simulation</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="viewport-blackjack" class="view-frame">
+        <div class="casino-felt">
+            <div class="dealer-deck-shoe"></div>
+            
+            <div class="meta-label">HOUSE DEALER SYSTEM <span class="score-badge" id="hud-dealer-score">-</span></div>
+            <div class="card-horizon" id="matrix-dealer-cards"></div>
+
+            <div class="toast-status" id="hud-status-toast">Awaiting Initial Wager...</div>
+
+            <div class="card-horizon" id="matrix-player-cards"></div>
+            <div class="meta-label">ACTIVE OPERATOR HAND <span class="score-badge" id="hud-player-score">-</span></div>
+        </div>
+
+        <div class="console-controls" id="panel-wager">
+            <input type="number" id="input-wager-size" value="500" step="100" min="50" style="width:130px; text-align:center; font-size:18px; font-weight: 700;">
+            <button class="action-trigger" onclick="executeSimulationDeal()">COMMIT WAGER (DEAL)</button>
+        </div>
+
+        <div class="console-controls" id="panel-runtime" style="display:none;">
+            <button class="action-trigger" onclick="sendSimulationAction('hit')">DRAW CARD (HIT)</button>
+            <button class="action-trigger secondary" onclick="sendSimulationAction('stand')">CEASE ACTION (STAND)</button>
+        </div>
+    </div>
+
+    <script>
+        let sessionObject = { username: 'guest', role: 'user', balance: 0 };
+
+        async function synchronizeSystemState() {
+            const res = await fetch('/api/auth/status');
+            const data = await res.json();
+            sessionObject.username = data.username;
+            sessionObject.role = data.role;
+            sessionObject.balance = data.balance;
+
+            document.getElementById('balance-value').innerText = data.balance;
+            document.getElementById('user-display').innerText = `${data.username.toUpperCase()} // ${data.role.toUpperCase()}`;
+
+            const terminal = document.getElementById('admin-terminal');
+            if(data.role === 'admin') {
+                terminal.style.display = 'block';
+                const listContainer = document.getElementById('admin-user-list');
+                listContainer.innerHTML = '';
+                data.all_users.forEach(u => listContainer.innerHTML += `<option value="${u}">${u}</option>`);
+            } else {
+                terminal.style.display = 'none';
+            }
+        }
+
+        function switchViewport(targetId) {
+            document.querySelectorAll('.view-frame').forEach(v => v.classList.remove('active'));
+            document.getElementById(`viewport-${targetId}`).classList.add('active');
+            document.getElementById('nav-lobby-trigger').style.display = (targetId === 'blackjack') ? 'block' : 'none';
+        }
+
+        async function runGatewayLogin() {
+            const res = await fetch('/api/auth/login', {
+                method: 'POST',
+                body: JSON.stringify({ username: document.getElementById('input-account-user').value, password: document.getElementById('input-account-pass').value })
+            });
+            const data = await res.json();
+            if(data.error) alert(data.error);
+            else { await synchronizeSystemState(); switchViewport('lobby'); }
+        }
+
+        async function runGatewayRegister() {
+            const res = await fetch('/api/auth/register', {
+                method: 'POST',
+                body: JSON.stringify({ username: document.getElementById('input-account-user').value, password: document.getElementById('input-account-pass').value })
+            });
+            const data = await res.json();
+            alert(data.msg || data.error);
+        }
+
+        async function executeAdminLiquidity() {
+            const res = await fetch('/api/admin/deposit', {
+                method: 'POST',
+                body: JSON.stringify({ username: document.getElementById('admin-user-list').value, amount: parseInt(document.getElementById('admin-amount-input').value) })
+            });
+            const data = await res.json();
+            if(data.success) { alert(data.msg); synchronizeSystemState(); }
+        }
+
+        function terminateSession() { location.reload(); }
+
+        /* --- GRAPHICS ENGINE 2.0 MATRIX GENERATOR --- */
+        async function executeSimulationDeal() {
+            const res = await fetch('/api/new_game', {
+                method: 'POST',
+                body: JSON.stringify({ bet: parseInt(document.getElementById('input-wager-size').value) })
+            });
+            const data = await res.json();
+            if(data.error) alert(data.error);
+            else drawGraphicsMatrix(data);
+        }
+
+        async function sendSimulationAction(route) {
+            const res = await fetch(`/api/${route}`, { method: 'POST' });
+            drawGraphicsMatrix(await res.json());
+        }
+
+        function drawGraphicsMatrix(state) {
+            document.getElementById('balance-value').innerText = state.balance;
+            document.getElementById('hud-player-score').innerText = state.player_score;
+            document.getElementById('hud-dealer-score').innerText = state.dealer_score;
+            document.getElementById('hud-status-toast').innerText = state.status || "Simulation active. Make calculations...";
+
+            const pSlot = document.getElementById('matrix-player-cards');
+            pSlot.innerHTML = '';
+            state.player_hand.forEach((card, idx) => {
+                pSlot.appendChild(generateStructuralCard(card, idx, false));
+            });
+
+            const dSlot = document.getElementById('matrix-dealer-cards');
+            dSlot.innerHTML = '';
+            state.dealer_hand.forEach((card, idx) => {
+                const isHidden = card.rank === '?';
+                dSlot.appendChild(generateStructuralCard(card, idx, isHidden));
+            });
+
+            if(state.game_over) {
+                document.getElementById('panel-wager').style.display = 'flex';
+                document.getElementById('panel-runtime').style.display = 'none';
+            } else {
+                document.getElementById('panel-wager').style.display = 'none';
+                document.getElementById('panel-runtime').style.display = 'flex';
+            }
+        }
+
+        function generateStructuralCard(card, index, isHidden) {
+            const cardRoot = document.createElement('div');
+            cardRoot.className = 'card-object';
+            cardRoot.style.animationDelay = `${index * 160}ms`; // Sequential geometric dealing speed
+
+            if (isHidden) {
+                cardRoot.classList.add('flipped-state');
+                cardRoot.innerHTML = `
+                    <div class="card-plane front-side"></div>
+                    <div class="card-plane back-side"></div>
+                `;
+            } else {
+                const isRed = card.suit === '♥' || card.suit === '♦';
+                cardRoot.innerHTML = `
+                    <div class="card-plane front-side ${isRed ? 'red-suit' : ''}">
+                        <div>${card.rank}</div>
+                        <div class="suit-vector">${card.suit}</div>
+                        <div class="mirror-rank">${card.rank}</div>
+                    </div>
+                    <div class="card-plane back-side"></div>
+                `;
+            }
+            return cardRoot;
+        }
+
+        window.onload = synchronizeSystemState;
+    </script>
+</body>
+</html>
+

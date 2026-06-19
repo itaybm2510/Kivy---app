@@ -1,0 +1,28 @@
+[2026-06-05T14:31:09.453Z] info  code-server 4.112.0 d7599ae360900ad55b503e3c840b417a1eae4798
+[2026-06-05T14:31:09.454Z] info  Using user-data-dir /data/data/com.termux/files/home/.local/share/code-server
+[2026-06-05T14:31:09.468Z] info  Using config file /data/data/com.termux/files/home/.config/code-server/config.yaml
+[2026-06-05T14:31:09.468Z] info  HTTP server listening on http://127.0.0.1:8080/
+[2026-06-05T14:31:09.468Z] info    - Authentication is disabled
+[2026-06-05T14:31:09.468Z] info    - Not serving HTTPS
+[2026-06-05T14:31:09.468Z] info  Session server listening on /data/data/com.termux/files/home/.local/share/code-server/code-server-ipc.sock
+[17:32:12] 
+
+
+
+
+[reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[17:32:12] Extension host agent started.
+[17:32:12] Started initializing default profile extensions in extensions installation folder. file:///data/data/com.termux/files/home/.local/share/code-server/extensions
+[17:32:12] Completed initializing default profile extensions in extensions installation folder. file:///data/data/com.termux/files/home/.local/share/code-server/extensions
+[17:32:13] [127.0.0.1][1fcb450c][ManagementConnection] New connection established.
+[17:32:13] [127.0.0.1][3e11831a][ExtensionHostConnection] New connection established.
+[17:32:14] [127.0.0.1][3e11831a][ExtensionHostConnection] <10137> Launched Extension Host Process.
+[17:32:14] [127.0.0.1][3e11831a][ExtensionHostConnection] <10137> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+[17:37:04] [127.0.0.1][1fcb450c][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[17:37:04] [127.0.0.1][3e11831a][ExtensionHostConnection] <10137> Extension Host Process exited with code: 0, signal: null.
+[17:37:04] [127.0.0.1][2797f617][ManagementConnection] New connection established.
+[17:37:05] [127.0.0.1][2dcc6304][ExtensionHostConnection] New connection established.
+[17:37:05] [127.0.0.1][2dcc6304][ExtensionHostConnection] <17550> Launched Extension Host Process.
+[17:37:06] [127.0.0.1][2dcc6304][ExtensionHostConnection] <17550> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+

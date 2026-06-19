@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetX24 | Cashier Suite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { background-color: #020617; font-family: system-ui, sans-serif; }
+        .neon-border { border: 1px solid rgba(6, 182, 212, 0.3); box-shadow: 0 0 15px rgba(6, 182, 212, 0.1); }
+    </style>
+</head>
+<body class="text-white min-h-screen max-w-md mx-auto shadow-2xl bg-[#020617] p-6 flex flex-col justify-between">
+
+    <div class="space-y-6">
+        <div class="flex justify-between items-center pb-4 border-b border-gray-900">
+            <a href="/" class="text-gray-400 hover:text-white"><i class="fa-solid fa-arrow-left text-lg"></i></a>
+            <h1 class="text-xl font-black tracking-wider text-white" style="text-shadow: 0 0 10px #06b6d4;">CASHIER HUB</h1>
+            <div class="bg-[#0f172a] px-3 py-1 rounded-full border border-cyan-500/30 text-cyan-400 font-black text-xs">
+                ₪{{ balance }}
+            </div>
+        </div>
+
+        {% if error_msg %}
+        <div class="bg-red-950/40 border border-red-500/40 p-3 rounded-xl text-xs text-red-300">{{ error_msg }}</div>
+        {% endif %}
+        {% if success_msg %}
+        <div class="bg-emerald-950/40 border border-emerald-500/40 p-3 rounded-xl text-xs text-emerald-300">{{ success_msg }}</div>
+        {% endif %}
+
+        <div class="bg-[#050b14] p-5 rounded-2xl neon-border space-y-4">
+            <h2 class="text-xs font-black tracking-widest text-cyan-400 uppercase">Submit Funds Request</h2>
+            <form method="POST" class="space-y-4">
+                {% csrf_token %}
+                <div class="grid grid-cols-2 gap-3">
+                    <label class="cursor-pointer">
+                        <input type="radio" name="tx_type" value="deposit" checked class="sr-only peer">
+                        <div class="p-3 bg-[#0f172a] border border-gray-800 rounded-xl text-center font-bold text-xs uppercase tracking-wider peer-checked:border-cyan-500 peer-checked:text-cyan-400 transition-all">
+                            <i class="fa-solid fa-arrow-down-long mr-1"></i> Deposit
+                        </div>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="radio" name="tx_type" value="withdrawal" class="sr-only peer">
+                        <div class="p-3 bg-[#0f172a] border border-gray-800 rounded-xl text-center font-bold text-xs uppercase tracking-wider peer-checked:border-cyan-500 peer-checked:text-cyan-400 transition-all">
+                            <i class="fa-solid fa-arrow-up-long mr-1"></i> Withdraw
+                        </div>
+                    </label>
+                </div>
+
+                <div class="space-y-1.5">
+                    <label class="block text-[10px] font-black text-gray-500 uppercase tracking-widest">Amount (ILS)</label>
+                    <input type="number" name="amount" min="10" required placeholder="Enter amount (e.g. 500)" class="w-full bg-[#0f172a] border border-gray-900 rounded-xl px-4 py-3 text-sm font-bold text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                </div>
+
+                <button type="submit" class="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-black py-3 rounded-xl text-xs uppercase tracking-widest transition-colors">
+                    Send Request to Admin
+                </button>
+            </form>
+        </div>
+
+        <div class="space-y-3">
+            <h3 class="text-[10px] font-black text-gray-500 uppercase tracking-widest">Transaction Log</h3>
+            <div class="space-y-2 max-h-60 overflow-y-auto pr-1">
+                {% for tx in history %}
+                <div class="bg-[#050b14] border border-gray-900 p-3 rounded-xl flex justify-between items-center text-xs">
+                    <div>
+                        <div class="font-bold uppercase tracking-wide {% if tx.tx_type == 'deposit' %}text-emerald-400{% else %}text-amber-400{% endif %}">
+                            {{ tx.tx_type }}
+                        </div>
+                        <div class="text-[10px] text-gray-500 mt-0.5">{{ tx.created_at|date:"M d, H:i" }}</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="font-black">₪{{ tx.amount }}</div>
+                        <span class="text-[9px] font-black px-2 py-0.5 rounded uppercase tracking-wider mt-1 inline-block
+                            {% if tx.status == 'pending' %}bg-cyan-950 text-cyan-400 border border-cyan-500/20{% elif tx.status == 'approved' %}bg-emerald-950 text-emerald-400 border border-emerald-500/20{% else %}bg-red-950 text-red-400 border border-red-500/20{% endif %}">
+                            {{ tx.status }}
+                        </span>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="text-center text-xs text-gray-600 py-4 font-medium uppercase tracking-wider">No recent transactions</div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center text-[9px] text-gray-600 uppercase tracking-widest pt-6 border-t border-gray-900/40">
+        Secure Vault Terminal
+    </div>
+</body>
+</html>
+

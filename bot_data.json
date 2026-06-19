@@ -1,0 +1,49 @@
+{
+    "history": [
+        {
+            "symbol": "BTC/USDT",
+            "type": "BUY_LONG",
+            "entry": 75046.1,
+            "status": "OPEN",
+            "sl": 74295.63900000001,
+            "tp": 76547.02200000001,
+            "margin": 500.0,
+            "position_size": 1500.0,
+            "reason": "\u05e4\u05e8\u05d9\u05e6\u05ea \u05de\u05d5\u05de\u05e0\u05d8\u05d5\u05dd \u05d7\u05d9\u05d5\u05d1\u05d9\u05ea \u05d1\u05e9\u05d5\u05e7 \u05d7\u05d9"
+        },
+        {
+            "symbol": "ETH/USDT",
+            "type": "BUY_LONG",
+            "entry": 2042.0,
+            "status": "OPEN",
+            "sl": 2021.58,
+            "tp": 2082.84,
+            "margin": 500.0,
+            "position_size": 1500.0,
+            "reason": "\u05e4\u05e8\u05d9\u05e6\u05ea \u05de\u05d5\u05de\u05e0\u05d8\u05d5\u05dd \u05d7\u05d9\u05d5\u05d1\u05d9\u05ea \u05d1\u05e9\u05d5\u05e7 \u05d7\u05d9"
+        },
+        {
+            "symbol": "SOL/USDT",
+            "type": "BUY_LONG",
+            "entry": 83.17,
+            "status": "OPEN",
+            "sl": 82.3383,
+            "tp": 84.8334,
+            "margin": 500.0,
+            "position_size": 1500.0,
+            "reason": "\u05e4\u05e8\u05d9\u05e6\u05ea \u05de\u05d5\u05de\u05e0\u05d8\u05d5\u05dd \u05d7\u05d9\u05d5\u05d1\u05d9\u05ea \u05d1\u05e9\u05d5\u05e7 \u05d7\u05d9"
+        },
+        {
+            "symbol": "XRP/USDT",
+            "type": "BUY_LONG",
+            "entry": 1.3332,
+            "status": "OPEN",
+            "sl": 1.3198679999999998,
+            "tp": 1.359864,
+            "margin": 500.0,
+            "position_size": 1500.0,
+            "reason": "\u05e4\u05e8\u05d9\u05e6\u05ea \u05de\u05d5\u05de\u05e0\u05d8\u05d5\u05dd \u05d7\u05d9\u05d5\u05d1\u05d9\u05ea \u05d1\u05e9\u05d5\u05e7 \u05d7\u05d9"
+        }
+    ],
+    "balance": 10000.0
+}

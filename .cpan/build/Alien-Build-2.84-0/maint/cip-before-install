@@ -1,0 +1,54 @@
+#!/bin/bash
+
+set -ex
+
+if echo $CIP_TAG | grep -q -- -alpine ; then
+  echo alpine
+  cip sudo apk add cmake
+  cip sudo apk add pkgconf-dev
+  cip sudo apk add libffi-dev
+  # needed for plugin tests later
+  cip sudo apk add git
+  cip sudo apk add g++
+elif echo $CIP_TAG | grep -q -- -fedora ; then
+  echo Fedora
+  cip sudo yum install cmake libffi-devel wget git g++ -y
+else
+  echo Debian or Ubuntu
+  cip sudo apt-get update
+  cip sudo apt-get -y install pkg-config cmake libffi-dev wget git g++
+fi
+
+if [ "x$ALIEN_BUILD_INSTALL_EXTRA" == "x1" ]; then
+
+  cip exec env PERL_ALT_INSTALL=OVERWRITE cpanm -n Alt::Alien::cmake3::System
+
+  cip exec cpanm -n \
+    Test2::Harness \
+    File::Listing \
+    File::Listing::Ftpcopy \
+    HTML::LinkExtor \
+    HTTP::Tiny \
+    LWP \
+    PkgConfig \
+    PkgConfig::LibPkgConf \
+    Sort::Versions \
+    URI \
+    YAML \
+    Env::ShellWords \
+    Archive::Tar \
+    Archive::Zip \
+    Devel::Hide \
+    Readonly \
+    Alien::Base::ModuleBuild \
+    FFI::Platypus \
+    Mojo::DOM58 \
+    Mojolicious \
+    Win32::Vcpkg \
+    Plack \
+    Proc::Daemon \
+    AnyEvent::FTP \
+    Digest::SHA::PurePerl
+
+fi
+

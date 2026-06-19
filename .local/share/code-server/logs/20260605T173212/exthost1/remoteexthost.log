@@ -1,0 +1,35 @@
+2026-06-05 17:32:14.837 [info] Extension host with pid 10137 started
+2026-06-05 17:32:14.927 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-06-05 17:32:14.928 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-06-05 17:32:15.012 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-06-05 17:32:15.022 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-06-05 17:32:15.023 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-06-05 17:32:15.153 [info] Eager extensions activated
+2026-06-05 17:32:15.153 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-06-05 17:32:15.154 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-06-05 17:32:35.557 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-06-05 17:32:35.557 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-06-05 17:32:35.558 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-06-05 17:37:04.185 [info] Extension host terminating: received terminate message from renderer
+2026-06-05 17:37:04.248 [error] ProxyResolver#resolveProxy undefined Canceled: Canceled
+	at Au (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:7:1394)
+	at file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:130529
+	at Array.forEach (<anonymous>)
+	at pC.dispose (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:130469)
+	at wie.terminate (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:120:10240)
+	at pL.terminate (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:122:914)
+	at Gr (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:434:11154)
+	at Cf.value (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:434:9291)
+	at I.C (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:27:2328)
+	at I.fire (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:27:2546)
+	at na.fire (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:9492)
+	at U0.A (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:12608)
+	at Cf.value (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:11028)
+	at I.C (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:27:2328)
+	at I.fire (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:27:2546)
+	at Zk.acceptChunk (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:7975)
+	at Cf.value (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:7261)
+	at I.C (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:27:2328)
+	at I.fire (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:27:2546)
+	at Kj.w (file:///data/data/com.termux/files/usr/lib/code-server/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:29:21900) 
+2026-06-05 17:37:04.267 [info] Extension host with pid 10137 exiting with code 0

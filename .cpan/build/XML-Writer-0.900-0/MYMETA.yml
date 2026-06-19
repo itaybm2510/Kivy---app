@@ -1,0 +1,23 @@
+---
+abstract: 'Easily generate well-formed, namespace-aware XML.'
+author:
+  - 'David Megginson <david@megginson.com>'
+  - 'Ed Avis <ed@membled.com>'
+  - 'Joseph Walton <joe@kafsemo.org>'
+build_requires:
+  ExtUtils::MakeMaker: '0'
+configure_requires:
+  ExtUtils::MakeMaker: '0'
+dynamic_config: 0
+generated_by: 'Hand, CPAN::Meta::Converter version 2.150010'
+license: unrestricted
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: XML-Writer
+no_index:
+  package:
+    - XML::Writer::Namespaces
+version: '0.900'
+x_installdirs: site
+x_serialization_backend: 'CPAN::Meta::YAML version 0.020'

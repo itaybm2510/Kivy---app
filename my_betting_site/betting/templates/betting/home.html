@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>BetX24 | Ultimate Gaming Lounge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { background-color: #020617; font-family: system-ui, -apple-system, sans-serif; }
+        .neon-premium-logo { color: #ffffff; font-weight: 900; letter-spacing: 4px; font-family: 'Impact', sans-serif; text-shadow: 0 0 4px #ffffff, 0 0 12px #06b6d4, 0 0 25px #06b6d4; }
+        .neon-card-blue { background: linear-gradient(135deg, #0b1528 0%, #050b14 100%); border: 1px solid rgba(6, 182, 212, 0.2); box-shadow: 0 0 25px rgba(6, 182, 212, 0.04); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .neon-card-blue:hover { border-color: #06b6d4; box-shadow: 0 0 30px rgba(6, 182, 212, 0.25); transform: translateY(-3px); }
+    </style>
+</head>
+<body class="text-white min-h-screen flex flex-col justify-between max-w-md mx-auto shadow-2xl relative overflow-x-hidden">
+
+    <div class="bg-[#050b14] p-4 flex justify-between items-center border-b border-gray-900/80 z-10">
+        <button onclick="toggleSidebar()" class="text-gray-400 hover:text-white transition-colors p-1 focus:outline-none"><i class="fa-solid fa-bars text-xl text-cyan-400"></i></button>
+        <div class="text-2xl font-black tracking-wider neon-premium-logo">BETX24</div>
+        <a href="/cashier/" class="flex items-center gap-2 bg-[#0f172a] px-4 py-1.5 rounded-full border border-cyan-500/30 hover:border-cyan-400 transition-colors">
+            <i class="fa-solid fa-wallet text-cyan-400 text-xs"></i>
+            <span class="font-black text-sm text-cyan-400">₪{{ balance }}</span>
+        </a>
+    </div>
+
+    <div id="sidebar-overlay" onclick="toggleSidebar()" class="fixed inset-0 bg-black/80 z-40 hidden"></div>
+    <div id="sidebar" class="fixed inset-y-0 left-0 w-64 bg-[#050b14]/98 backdrop-blur-md border-r border-cyan-500/20 z-50 transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between p-6 shadow-2xl">
+        <div class="space-y-6">
+            <div class="flex justify-between items-center border-b border-gray-900 pb-4">
+                <div>
+                    <div class="text-[10px] font-bold text-gray-500 uppercase tracking-wider">Account Active</div>
+                    <div class="text-sm font-black text-cyan-400">{{ request.user.username }}</div>
+                </div>
+                <button onclick="toggleSidebar()" class="text-gray-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            <nav class="space-y-2">
+                <a href="/" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-[#0f172a] text-cyan-400 font-bold text-xs uppercase tracking-wide border border-cyan-500/10"><i class="fa-solid fa-house w-5"></i> Main Lobby</a>
+                <a href="/blackjack/" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-[#0f172a] text-gray-300 hover:text-cyan-400 transition-all font-bold text-xs uppercase tracking-wide"><i class="fa-solid fa-clubs text-cyan-500 w-5"></i> Blackjack Pro</a>
+                <a href="/roulette/" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-[#0f172a] text-gray-300 hover:text-cyan-400 transition-all font-bold text-xs uppercase tracking-wide"><i class="fa-solid fa-circle-dot text-cyan-500 w-5"></i> Neon Roulette</a>
+                <a href="/cashier/" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-[#0f172a] text-gray-300 hover:text-cyan-400 transition-all font-bold text-xs uppercase tracking-wide"><i class="fa-solid fa-wallet text-cyan-400 w-5"></i> Cashier Terminal</a>
+                {% if request.user.is_superuser %}
+                <a href="/casino-admin/" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-purple-950/30 text-purple-400 border border-purple-500/20 font-bold text-xs uppercase tracking-wide"><i class="fa-solid fa-user-gear w-5"></i> Admin Dashboard</a>
+                {% endif %}
+            </nav>
+        </div>
+        <div class="border-t border-gray-900 pt-4">
+            <a href="/logout/" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-red-950/20 border border-red-500/20 hover:bg-red-900/40 text-red-400 transition-all font-bold text-xs uppercase tracking-wide"><i class="fa-solid fa-right-from-bracket w-5"></i> End Session</a>
+        </div>
+    </div>
+
+    <div class="flex-1 p-6 space-y-6">
+        <div class="flex justify-between items-end">
+            <div>
+                <h2 class="text-[10px] font-black tracking-widest text-cyan-500/80 uppercase">Premium Member</h2>
+                <h1 class="text-xl font-black text-white mt-0.5 tracking-wide">CASINO SUITE</h1>
+            </div>
+            <div class="text-right">
+                <div class="text-[9px] text-gray-500 font-bold uppercase">System Feed</div>
+                <div class="text-xs font-black text-emerald-400 flex items-center justify-end gap-1.5 mt-0.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span> SECURE
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4">
+            <a href="/blackjack/" class="neon-card-blue p-5 rounded-2xl flex items-center justify-between group">
+                <div class="space-y-1.5">
+                    <div class="text-lg font-black text-white tracking-wide uppercase flex items-center gap-2">Blackjack Table <span class="bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-[9px] px-2 py-0.5 rounded font-bold uppercase tracking-wider">High Limit</span></div>
+                    <div class="text-xs text-gray-400 max-w-[240px]">Full certified split mechanics, standard double downs, and clean dealer execution.</div>
+                </div>
+                <div class="w-11 h-11 rounded-xl bg-cyan-500/10 flex items-center justify-center border border-cyan-500/30 group-hover:bg-cyan-500 group-hover:text-black transition-all"><i class="fa-solid fa-chevron-right text-sm"></i></div>
+            </a>
+
+            <a href="/roulette/" class="neon-card-blue p-5 rounded-2xl flex items-center justify-between group">
+                <div class="space-y-1.5">
+                    <div class="text-lg font-black text-white tracking-wide uppercase flex items-center gap-2">Neon Roulette <span class="bg-purple-500/10 border border-purple-500/30 text-purple-400 text-[9px] px-2 py-0.5 rounded font-bold uppercase tracking-wider">NEW</span></div>
+                    <div class="text-xs text-gray-400 max-w-[240px]">Bet on Red, Black, or standard individual lucky numbers with x36 multipliers.</div>
+                </div>
+                <div class="w-11 h-11 rounded-xl bg-cyan-500/10 flex items-center justify-center border border-cyan-500/30 group-hover:bg-cyan-500 group-hover:text-black transition-all"><i class="fa-solid fa-chevron-right text-sm"></i></div>
+            </a>
+
+            <a href="/cashier/" class="neon-card-blue p-5 rounded-2xl flex items-center justify-between group">
+                <div class="space-y-1.5">
+                    <div class="text-lg font-black text-white tracking-wide uppercase flex items-center gap-2">Cashier Terminal</div>
+                    <div class="text-xs text-gray-400 max-w-[240px]">Submit fast deposit and withdrawal requests directly to the main secure admin desk.</div>
+                </div>
+                <div class="w-11 h-11 rounded-xl bg-cyan-500/10 flex items-center justify-center border border-cyan-500/30 group-hover:bg-cyan-500 group-hover:text-black transition-all"><i class="fa-solid fa-chevron-right text-sm"></i></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="p-4 text-center text-[9px] text-gray-600 tracking-widest uppercase border-t border-gray-900/40">BetX24 Verified Secure Instance Pro Engine</div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebar-overlay');
+            sidebar.classList.toggle('-translate-x-full');
+            overlay.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
+
