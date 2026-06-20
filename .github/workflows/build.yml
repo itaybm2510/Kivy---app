@@ -55,16 +55,18 @@ jobs:
         pip install --upgrade pip
         pip install --upgrade Cython==0.29.33 virtualenv buildozer
 
-    - name: Accept Android SDK Licenses
+    - name: Clean buildozer cache
       run: |
-        mkdir -p ~/.android
-        touch ~/.android/repositories.cfg
-        yes | true
+        # מחיקת קבצי זבל זמניים אם קיימים בריפוזיטורי
+        rm -rf .buildozer/
+        rm -rf bin/
 
     - name: Build APK with Buildozer
       run: |
+        # הרצה חלקה שמנקה את הפלטפורמה בפנים ומקמפלת מחדש
+        yes | buildozer android clean
         yes | buildozer android debug
-
+        
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
       with:
