@@ -40,13 +40,14 @@ jobs:
           openjdk-17-jdk \
           autoconf \
           libtool \
+          libtool-bin \
+          m4 \
           pkg-config \
           zlib1g-dev \
           libncurses5-dev \
           libgdbm-dev \
           libnspr4-dev \
           libreadline-dev \
-          libffi-dev \
           bluez \
           libbluetooth-dev \
           squashfs-tools
@@ -58,12 +59,10 @@ jobs:
       run: |
         mkdir -p ~/.android
         touch ~/.android/repositories.cfg
-        # קבלת כל הרישיונות של ה-SDK באופן אוטומטי מלא
-        yes | auth_cancel=1 sdkmanager --licenses || true
+        yes | true
 
     - name: Build APK with Buildozer
       run: |
-        # הרצה שמספקת אישור אוטומטי לכל שאילתה של בילדוזר
         yes | buildozer android debug
 
     - name: Upload APK Artifact

@@ -10,5 +10,5 @@ requirements = python3,kivy,sqlite3
 orientation = portrait
 osx.kivy_version = 2.1.0
 fullscreen = 0
-android.archs = armeabi-v7a, arm64-v8a
+android.archs = arm64-v8a
 android.allow_backup = True
